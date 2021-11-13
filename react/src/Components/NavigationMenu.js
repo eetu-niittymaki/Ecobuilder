@@ -3,6 +3,7 @@ import Button from '@mui/material/Button'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import MenuIcon from '@mui/icons-material/Menu'
+import { Link } from 'react-router-dom'
 
 export default function NavigationMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -40,9 +41,9 @@ export default function NavigationMenu() {
           horizontal: 'left',
         }}
       >
-        <MenuItem onClick={handleClose}>Technical Solutions</MenuItem>
-        <MenuItem onClick={handleClose}>Planning Solutions</MenuItem>
-        <MenuItem onClick={handleClose}>Organisational Solutions</MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/technical">Technical Solutions</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/planning">Planning Solutions</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/organisation">Organisational Solutions</Link></MenuItem>
       </Menu>
     </div>
   )
