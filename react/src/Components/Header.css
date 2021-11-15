@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
 
 .header {
-    padding: 25px 0;
     text-align: center;
     background: white;
 }
 
 .header img {
     width: 13%;
-    height: 100%;
+    height: 000%;
     padding-left: 10%;
     padding-right: 10%;
 }

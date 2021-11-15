@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
 
-h1 {
+.images h1 {
     font-family: Khand;
     color: #2F5A91;
     margin-top: 80%;
@@ -11,10 +11,16 @@ h1 {
     padding: 5%;
 }
 
-h1:hover {
-    color: black;
+.images:hover {
+    position:relative;
+    top:-15px;
+    left:-25px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
 }
 
-.images:hover {
-    opacity: 70%;
+.images h1:hover {
+    color: #767070;
 }

@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <Box sx={{ flexGrow: 1 ,}}>
     <AppBar position="static"
-            sx={{backgroundColor: "white"}}>
+            sx={{backgroundColor: "white",}}>
       <Toolbar>
         <IconButton
           size="large"
@@ -23,7 +23,7 @@ const Header = () => {
         >
         <NavigationMenu/>
         </IconButton>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1, height: "60%" }}>
           <div className="header">
             <img src="../logo.png"
             />
