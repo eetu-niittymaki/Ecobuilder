@@ -8,6 +8,11 @@ import { BrowserRouter, Routes, Route  } from "react-router-dom";
 import Technical from "./Pages/Technical.js"
 import Fenster from "./Pages/Technical/Fenster.js"
 import Wand from "./Pages/Technical/Wand.js"
+import Betrieb from "./Pages/Technical/Betrieb.js"
+import Balkon from "./Pages/Technical/Balkon.js"
+import Dach from "./Pages/Technical/Dach.js"
+import Fundament from "./Pages/Technical/Fundament.js"
+import Brandschutz from "./Pages/Technical/Brandschutz.js"
 
 import Planning from "./Pages/Planning.js"
 
@@ -23,6 +28,11 @@ ReactDOM.render(
         <Route path="/technical" element={<Technical />} />
           <Route path="/technical/fenster" element={<Fenster />} />
           <Route path="/technical/wand" element={<Wand />} />
+          <Route path="/technical/betrieb" element={<Betrieb />} />
+          <Route path="/technical/balkon" element={<Balkon />} />
+          <Route path="/technical/dach" element={<Dach />} />
+          <Route path="/technical/fundament" element={<Fundament />} />
+          <Route path="/technical/brandschutz" element={<Brandschutz/>} />
         <Route path="/planning" element={<Planning />} />
         <Route path="/organisation" element={<Organisation />} />
 
