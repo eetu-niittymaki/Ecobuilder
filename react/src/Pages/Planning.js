@@ -11,7 +11,7 @@ export default  function Planning() {
         <div>
             <Header/>
             <Box sx={{marginTop: "2%"}}>
-                <img src="./planning_background.jpg" usemap="#planning" className="background" />
+                <img src="./planning_background.png" usemap="#planning" className="background" />
                     <map className="map" name="planning">
                         <Link to="/planning/grundriss"><area shape="rect" alt="grundriss"
                                 coords = "115,30, 360,100" /></Link>

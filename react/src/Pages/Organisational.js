@@ -11,7 +11,7 @@ export default  function Organisational() {
         <div>
             <Header/>
             <Box sx={{marginTop: "2%"}}>
-                <img src="./organisational_background.jpg" usemap="#organisational" className="background" />
+                <img src="./organisational_background.png" usemap="#organisational" className="background" />
                     <map className="map" name="organisational">
                         <Link to="/organisational/ausschbreibung"><area shape="rect" alt="ausschbreibung"
                                 coords = "440,75, 700,135" /></Link>

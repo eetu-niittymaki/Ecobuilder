@@ -25,7 +25,7 @@ const Header = () => {
         </IconButton>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1, height: "60%" }}>
           <div className="header">
-            <img src="../ecobuilderLogo2.jpg"
+            <img src="../logo.png"
             />
             <Link to="/" style={{ textDecoration: 'none' }}><span>ecobuilder</span></Link>
             <a href="https://www.bayern.de/">
