@@ -43,7 +43,7 @@ export default function NavigationMenu() {
       >
         <MenuItem onClick={handleClose}><Link to="/technical" style={{ textDecoration: 'none' }}>Technical Solutions</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to="/planning" style={{ textDecoration: 'none' }}>Planning Solutions</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to="/organisation" style={{ textDecoration: 'none' }}>Organisational Solutions</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/organisational" style={{ textDecoration: 'none' }}>Organisational Solutions</Link></MenuItem>
       </Menu>
     </div>
   )

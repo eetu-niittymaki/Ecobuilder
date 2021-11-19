@@ -15,8 +15,18 @@ import Fundament from "./Pages/Technical/Fundament.js"
 import Brandschutz from "./Pages/Technical/Brandschutz.js"
 
 import Planning from "./Pages/Planning.js"
+import Gesatsystem from "./Pages/Planning/Gesatsystem.js"
+import Grundriss from "./Pages/Planning/Grundriss.js"
+import Heizung from "./Pages/Planning/Heizung.js"
+import Kühlung from "./Pages/Planning/Kühlung.js"
+import Lüftung from "./Pages/Planning/Lüftung.js"
 
-import Organisation from "./Pages/Organisation.js"
+import Organisational from "./Pages/Organisational.js"
+import Ausschbreibung from "./Pages/Organisational/Ausschbreibung.js"
+import Marktanalyse from "./Pages/Organisational/Marktanalyse.js"
+import Qualitätsmanagement from "./Pages/Organisational/Qualitätsmanagement.js"
+import Vorfertigung from "./Pages/Organisational/Vorfertigung.js"
+import Zeitmanagement from "./Pages/Organisational/Zeitmanagement.js"
 
 
 
@@ -25,6 +35,8 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+
+        // Technical routes
         <Route path="/technical" element={<Technical />} />
           <Route path="/technical/fenster" element={<Fenster />} />
           <Route path="/technical/wand" element={<Wand />} />
@@ -33,8 +45,22 @@ ReactDOM.render(
           <Route path="/technical/dach" element={<Dach />} />
           <Route path="/technical/fundament" element={<Fundament />} />
           <Route path="/technical/brandschutz" element={<Brandschutz/>} />
+
+        // Planning Routes
         <Route path="/planning" element={<Planning />} />
-        <Route path="/organisation" element={<Organisation />} />
+          <Route path="/planning/gesatsystem" element={<Gesatsystem />} />
+          <Route path="/planning/grundriss" element={<Grundriss />} />
+          <Route path="/planning/heizung" element={<Heizung />} />
+          <Route path="/planning/kuhlung" element={<Kühlung />} />
+          <Route path="/planning/luftung" element={<Lüftung />} />
+
+        // Organisational routes
+        <Route path="/organisational" element={<Organisational />} />
+          <Route path="/organisational/ausschbreibung" element={<Ausschbreibung />} />
+          <Route path="/organisational/marktanalyse" element={<Marktanalyse />} />
+          <Route path="/organisational/qualitatsmanagement" element={<Qualitätsmanagement />} />
+          <Route path="/organisational/vorfertigung" element={<Vorfertigung />} />
+          <Route path="/organisational/zeitmanagement" element={<Zeitmanagement />} />
 
       </Routes>
     </BrowserRouter>
