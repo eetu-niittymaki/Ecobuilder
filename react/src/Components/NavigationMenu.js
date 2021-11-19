@@ -41,9 +41,9 @@ export default function NavigationMenu() {
           horizontal: 'left',
         }}
       >
-        <MenuItem onClick={handleClose}><Link to="/technical">Technical Solutions</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to="/planning">Planning Solutions</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to="/organisation">Organisational Solutions</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/technical" style={{ textDecoration: 'none' }}>Technical Solutions</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/planning" style={{ textDecoration: 'none' }}>Planning Solutions</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/organisation" style={{ textDecoration: 'none' }}>Organisational Solutions</Link></MenuItem>
       </Menu>
     </div>
   )

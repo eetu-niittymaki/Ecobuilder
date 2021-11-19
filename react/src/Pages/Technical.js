@@ -10,24 +10,23 @@ export default  function Technical() {
     return (
         <div>
             <Header/>
-
             <Box sx={{marginTop: "2%"}}>
                 <img src="./technical_background.png" usemap="#technical" className="background" />
                     <map className="map" name="technical">
                         <Link to="/technical/fenster"><area shape="rect" alt="fenster"
-                                coords = "915,150, 980,220" /></Link>
+                                coords = "840,120, 1080,220" /></Link>
                         <Link to="/technical/wand"><area shape="rect" alt="wand"
-                                coords = "1030,595, 1110,670" /></Link>
+                                coords = "940,495, 1210,670" /></Link>
                         <Link to="/technical/betrieb"><area shape="rect" alt="betrieb"
-                                coords = "690,90, 760,165" /></Link>
+                                coords = "620,90, 830,165" /></Link>
                         <Link to="/technical/dach"><area shape="rect" alt="dach"
-                                coords = "520,10, 610,85" /></Link>
+                                coords = "450,10, 695,80" /></Link>
                         <Link to="/technical/balkon"><area shape="rect" alt="balkon"
-                                coords = "120,50, 200,125" /></Link>
+                                coords = "110,30, 330,125" /></Link>
                         <Link to="/technical/fundament"><area shape="rect" alt="fundament"
-                                coords = "530,615, 610,690" /></Link>
+                                coords = "460,520, 740,690" /></Link>
                         <Link to="/technical/brandschutz"><area shape="rect" alt="brandschutz"
-                                coords = "80,600, 170,675" /></Link>
+                                coords = "50,500, 380,675" /></Link>
                     </map>
             </Box>
             <div className="infoText"><h1><InfoOutlinedIcon sx={{color: "#008ae6"}}/> Click on the icons to get more information on the topics you are interested in!</h1></div>
