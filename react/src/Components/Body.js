@@ -8,28 +8,28 @@ export default function Body() {
         <Box sx={{ display: 'flex', 
                     justifyContent: "center"}}>
             <div className="images"
-                    style={{ backgroundImage: "url(https://www.dealcloud.com/wp-content/uploads/2020/01/Blueprint-graphic.png)", 
+                    style={{ backgroundImage: "url(./technical_cover.png)", 
                             backgroundSize: "cover",
                             height: "70vh",
                             width: "25%",
                             marginTop: "0.5em"}}>
-                <Link to="/technical"><h1>Technical Solutions</h1></Link>
+                <Link to="/technical" style={{ textDecoration: 'none' }}><h1>Technical Solutions</h1></Link>
             </div>
             <div className="images"
-                    style={{ backgroundImage: "url(http://buildwithvisionary.com/wp-content/uploads/2016/05/Hampton-floorplans-04.jpg)", 
+                    style={{ backgroundImage: "url(./planning_cover.jpg)", 
                             backgroundSize: "cover",
                             height: "70vh",
                             width: "25%",
                             marginTop: "0.5em"}}>
-                <Link to="/planning"><h1>Planning Solutions</h1></Link>
+                <Link to="/planning" style={{ textDecoration: 'none' }}><h1>Planning Solutions</h1></Link>
             </div>
             <div className="images"
-                    style={{ backgroundImage: "url(https://miro.medium.com/max/980/1*b1IsY6YX7Wb-ngq6otMPKw.jpeg)",
+                    style={{ backgroundImage: "url(./organisational_cover.jpg)",
                             backgroundSize: "cover",
                             height: "70vh",
                             width: "25%",
                             marginTop: "0.5em"}}>
-                <Link to="/organisation"><h1>Organisational Solutions</h1></Link>
+                <Link to="/organisation" style={{ textDecoration: 'none' }}><h1>Organisational Solutions</h1></Link>
             </div>
          </Box>
     )

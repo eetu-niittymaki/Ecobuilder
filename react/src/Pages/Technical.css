@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.infoText {
+    text-align: center;
+    color: #008ae6;
+    font-family: Lato;
+}
+
+.background {
+    width: 1227px; 
+    height: 700px;
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+}
