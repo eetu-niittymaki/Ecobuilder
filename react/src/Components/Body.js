@@ -29,7 +29,7 @@ export default function Body() {
                             height: "70vh",
                             width: "25%",
                             marginTop: "0.5em"}}>
-                <Link to="/organisation" style={{ textDecoration: 'none' }}><h1>Organisational Solutions</h1></Link>
+                <Link to="/organisational" style={{ textDecoration: 'none' }}><h1>Organisational Solutions</h1></Link>
             </div>
          </Box>
     )
