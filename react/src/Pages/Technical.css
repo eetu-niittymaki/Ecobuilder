@@ -7,8 +7,8 @@
 }
 
 .background {
-    width: 1227px; 
-    height: 700px;
+    width: auto; 
+    height: auto;
     display: block;  
     margin-left: auto;
     margin-right: auto;

@@ -1,33 +1,62 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Header from '../Components/Header.js'
 import Box from '@mui/material/Box';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
+import ImageMapper from 'react-image-mapper';
 import "./Planning.css"
 
-export default  function Planning() {
+const MAP = {
+        name: 'planning',
+        areas: [
+            { name: "grundriss", shape: "rect", coords: [110,35, 330,110], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
+            { name: "gesatsystem", shape: "rect", coords: [385,25, 660,100], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
+            { name: "brandschutz", shape: "rect", coords: [740,35, 1000,110], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
+            { name: "heizung", shape: "rect", coords: [240,660, 420,730], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
+            { name: "kuhlung", shape: "rect", coords: [540,660, 810,750], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
+            { name: "luftung", shape: "rect", coords: [810,600, 990,675], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"}
+        ]
+    }
+    
+export default function Planning() { 
+    const [hoveredArea, setHoveredArea] = useState()
+    const [windowWidth, setWindowWidth] = useState((window.innerWidth > 1046) ? 1046 : window.innerWidth)
+    
+    const navigate = useNavigate();
+    
+    const enterArea = (area) => {
+        setHoveredArea(area);
+    }
+        
+    const leaveArea = (area) => {
+        setHoveredArea(null);
+    }
+    
+    // Makes sure resized images width isnt larger than images original width
+    const handleResize = (e) => {
+        setWindowWidth((window.innerWidth > 1046) ? 1046 : window.innerWidth)
+    }
+    
+    // Listens to browser screen resizing
+    useEffect( () => {
+        window.addEventListener("resize", handleResize);
+    }, [])
+    
+    const handleClick = () => {
+        navigate(`/planning/${hoveredArea.name}`)
+    }
+            
     return (
         <div>
             <Header/>
-            <Box sx={{marginTop: "2%"}}>
-                <img src="./planning_background.png" usemap="#planning" className="background" />
-                    <map className="map" name="planning">
-                        <Link to="/planning/grundriss"><area shape="rect" alt="grundriss"
-                                coords = "115,30, 360,100" /></Link>
-                        <Link to="/planning/gesatsystem"><area shape="rect" alt="gesamtsystem"
-                                coords = "390,30, 700,80" /></Link>
-                        <Link to="/technical/brandschutz"><area shape="rect" alt="brandschutz"
-                                coords = "745,20, 1080,100" /></Link>
-                        <Link to="/technical/betrieb"><area shape="rect" alt="betrieb"
-                                coords = "10,600, 220,500" /></Link>
-                        <Link to="/planning/heizung"><area shape="rect" alt="heizung"
-                                coords = "260,1000, 470,500" /></Link>
-                        <Link to="/planning/kuhlung"><area shape="rect" alt="kühlung"
-                                coords = "560,1000, 870,520" /></Link>
-                        <Link to="/planning/luftung"><area shape="rect" alt="lüftung"
-                                coords = "850,480, 1070,545" /></Link>
-                    </map>
+            <Box sx={{marginTop: "1%", display: "center"}} >
+                <div className="image">
+                <ImageMapper src={"./planning_background.png"} map={MAP} imgWidth={1046} width={windowWidth} 
+                            onMouseEnter={area => enterArea(area)}
+                            onMouseLeave={area => leaveArea(area)}
+                        onClick={handleClick}
+                />
+                </div>
             </Box>
             <div className="infoText"><h1><InfoOutlinedIcon sx={{color: "#008ae6"}}/> Click on the icons to get more information on the topics you are interested in!</h1></div>
     </div>

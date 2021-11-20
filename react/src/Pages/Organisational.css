@@ -6,9 +6,7 @@
     font-family: Lato;
 }
 
-.background {
-    width: 1133px; 
-    height: 625px;
+.image {
     display: block;  
     margin-left: auto;
     margin-right: auto;
