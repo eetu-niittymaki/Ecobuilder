@@ -39,7 +39,7 @@ export default function SwipeableTemporaryDrawer() {
     >
       <List>
         {['Technical Solutions', 'Planning Solutions', 'Organisational Solutions'].map((text, index) => (
-          <Link to={`/${text.toLowerCase().split(" ", 1)}`} style={{textDecoration: "none"}}><ListItem button key={text}> // Router link
+          <Link to={`/${text.toLowerCase().split(" ", 1)}`} style={{textDecoration: "none"}}><ListItem button key={text}> 
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
