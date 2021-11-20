@@ -9,12 +9,12 @@ import "./Organisational.css"
 const MAP = {
     name: 'organisational',
     areas: [
-        { name: "ausschbreibung", shape: "rect", coords: [435,70, 700,140], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-        { name: "marktanalyse", shape: "rect", coords: [95,490, 365,565], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-        { name: "qualitatsmanagement", shape: "rect", coords: [680,485, 1050,560], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-        { name: "vorfertigung", shape: "rect", coords: [30,30, 290,115], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-        { name: "zeitmanagement", shape: "rect", coords: [830,90, 1105,160], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-        { name: "betrieb", shape: "rect", coords: [430,485, 605,555], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"}
+        { name: "ausschbreibung", shape: "rect", coords: [435,70, 700,140], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+        { name: "marktanalyse", shape: "rect", coords: [95,490, 365,565], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+        { name: "qualitatsmanagement", shape: "rect", coords: [680,485, 1050,560], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+        { name: "vorfertigung", shape: "rect", coords: [30,30, 290,115], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+        { name: "zeitmanagement", shape: "rect", coords: [830,90, 1105,160], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+        { name: "betrieb", shape: "rect", coords: [430,485, 605,555], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"}
     ]
 }
 
@@ -41,7 +41,7 @@ export default function Organisational() {
     useEffect( () => {
         window.addEventListener("resize", handleResize);
     }, [])
-
+    // Router navigator changes page onClick
     const handleClick = () => {
         navigate(`/organisational/${hoveredArea.name}`)
     }

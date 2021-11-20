@@ -9,13 +9,13 @@ import "./Technical.css"
 const MAP = {
         name: 'technical',
         areas: [
-            { name: "fenster", shape: "rect", coords: [905,140, 1125,230], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-            { name: "wand", shape: "rect", coords: [1020,585, 1215,680], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-            { name: "betrieb", shape: "rect", coords: [680,80, 900,170], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-            { name: "dach", shape: "rect", coords: [510,10, 705,85], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-            { name: "balkon", shape: "rect", coords: [115,45, 335,135], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-            { name: "fundament", shape: "rect", coords: [520,605, 805,695], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"},
-            { name: "brandschutz", shape: "rect", coords: [75,590, 400,690], preFillColor: "rgba(255, 255, 255, 0.5)", strokeColor: "#008ae6"}
+            { name: "fenster", shape: "rect", coords: [905,140, 1125,230], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+            { name: "wand", shape: "rect", coords: [1020,585, 1215,680], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+            { name: "betrieb", shape: "rect", coords: [680,80, 900,170], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+            { name: "dach", shape: "rect", coords: [510,10, 705,85], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+            { name: "balkon", shape: "rect", coords: [115,45, 335,135], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+            { name: "fundament", shape: "rect", coords: [520,605, 805,695], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+            { name: "brandschutz", shape: "rect", coords: [75,590, 400,690], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"}
         ]
     }
     
@@ -34,7 +34,7 @@ export default function Technical() {
     }
     
     // Makes sure resized images width isnt larger than images original width
-    const handleResize = (e) => {
+    const handleResize = () => {
         setWindowWidth((window.innerWidth > 1227) ? 1227 : window.innerWidth)
     }
     
@@ -42,7 +42,7 @@ export default function Technical() {
     useEffect( () => {
         window.addEventListener("resize", handleResize);
     }, [])
-    
+    // Router navigator changes page onClick
     const handleClick = () => {
         navigate(`/technical/${hoveredArea.name}`)
     }
