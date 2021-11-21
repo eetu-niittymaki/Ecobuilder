@@ -11,7 +11,7 @@ const onClick = () => {
 
 export default function Wand() {
   return (
-    <div>
+    <div className="container">
     <Header/>   
     <Box sx={{ marginTop: "1%", display: 'inline-flex', 
                 justifyContent: "center", width: "100%" }}>
@@ -22,7 +22,7 @@ export default function Wand() {
                         }}>
         </div>
         <div>
-            <img src="../wand/wand_icon.png" width="auto" height="auto" float="left"/> 
+            <img src="../wand/wand_icon.png" width="auto" height="auto" float="right"/> 
             <div>
                 <h1>Your ideas could stand right here!</h1>
             </div>
