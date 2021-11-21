@@ -22,7 +22,7 @@ export default function Wand() {
                         }}>
         </div>
         <div>
-            <img src="../wand/wand_icon.png" width="auto" height="auto" float="right"/> 
+            <img src="../wand/wand_icon.png" width="auto" height="auto" float="right" style={{marginLeft: "10%", marginTop: "5%"}}/> 
             <div>
                 <h1>Your ideas could stand right here!</h1>
             </div>
@@ -30,7 +30,7 @@ export default function Wand() {
                                                 width: "30%", height: "10%",
                                                 left: "35%", marginBottom: "5%"}}>share ideas</Button>
             <div>
-                <img src="../wand/wand_footer.png" width="auto" height="auto" top="20%"/> 
+                <img src="../wand/wand_footer.png" width="auto" height="auto"/> 
             </div> 
         </div>    
     </Box>
