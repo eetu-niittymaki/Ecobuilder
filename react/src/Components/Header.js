@@ -27,7 +27,7 @@ const Header = () => {
           <div className="header">
             <img src="../logo.png"
             />
-            <Link to="/" style={{ textDecoration: 'none' }}><span>ecobuilder</span></Link>
+            <Link to="/" style={{ textDecoration: 'none' }}><span className="title" >ecobuilder</span></Link>
             <a href="https://www.bayern.de/">
               <img src="../bayer.png"/>
             </a>

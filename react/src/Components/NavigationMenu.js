@@ -13,9 +13,10 @@ import { Link } from 'react-router-dom'
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
-
+    top: false,
+    bottom: false,
+    rigth: false,
     left: false,
-
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -39,7 +40,7 @@ export default function SwipeableTemporaryDrawer() {
     >
       <List>
         {['Technical Solutions', 'Planning Solutions', 'Organisational Solutions'].map((text, index) => (
-          <Link to={`/${text.toLowerCase().split(" ", 1)}`} style={{textDecoration: "none"}}><ListItem button key={text}> 
+          <Link to={`/${text.toLowerCase().split(" ", 1)}`} style={{textDecoration: "none", color: "#2F5A91"}}><ListItem button key={text}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
             </ListItemIcon>
@@ -65,7 +66,7 @@ export default function SwipeableTemporaryDrawer() {
     <div>
       {['menu'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <Button onClick={toggleDrawer(anchor, true)} style={{color: "#767070"}}>{anchor}</Button>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

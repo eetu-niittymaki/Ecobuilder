@@ -11,7 +11,7 @@ const MAP = {
         areas: [
             { name: "fenster", shape: "rect", coords: [905,140, 1125,230], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
             { name: "wand", shape: "rect", coords: [1020,585, 1215,680], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
-            { name: "betrieb", shape: "rect", coords: [680,80, 900,170], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+            { name: "betrieb", shape: "rect", coords: [685,85, 900,165], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
             { name: "dach", shape: "rect", coords: [510,10, 705,85], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
             { name: "balkon", shape: "rect", coords: [115,45, 335,135], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
             { name: "fundament", shape: "rect", coords: [520,605, 805,695], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
