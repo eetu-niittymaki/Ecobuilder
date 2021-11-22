@@ -30,7 +30,7 @@ export default function Fenster() {
                     width: "20%",
                 }}>
                 </div>
-                    <div style={{ marginBottom: "10%", marginLeft: "10%", fontSize: "120%" }}>
+                    <div style={{ marginLeft: "10%", fontSize: "120%" }}>
                         <img src="../fenster/fenster_icon.png" style={{ marginTop: "5%" }} />
                         <div style={{ marginTop: "10%", textAlign: "center" }}>
                             {example.map((props) => 
