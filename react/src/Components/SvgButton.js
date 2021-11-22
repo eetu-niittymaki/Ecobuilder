@@ -109,5 +109,5 @@ const SvgButton = React.forwardRef(function SvgButton(props, ref) {
 });
 
 export default function UnstyledButtonCustom() {
-  return <SvgButton>Share ideas</SvgButton>;
+  return <SvgButton>{}</SvgButton>;
 }

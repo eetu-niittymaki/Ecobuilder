@@ -22,7 +22,7 @@ export default function Wand() {
                         }}>
         </div>
         <div>
-            <img src="../wand/wand_icon.png" width="auto" height="auto" float="right" style={{marginLeft: "10%", marginTop: "5%"}}/> 
+            <img src="../wand/wand_icon.png"  style={{marginLeft: "10%", marginTop: "5%"}}/> 
             <div>
                 <h1>Your ideas could stand right here!</h1>
             </div>

@@ -15,4 +15,7 @@
 
 .container h2 {
     font-family: Lato;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
