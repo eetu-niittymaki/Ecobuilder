@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
 
-.images h1 {
+.containerBody h1 {
     font-family: Khand;
     color: #2F5A91;
-    margin-top: 80%;
+    margin-top: 100%;
     font-weight: 300;
     text-align: center;
     font-weight: bold;
@@ -11,16 +11,79 @@
     padding: 5%;
 }
 
-.images:hover {
+.columnBody:hover {
     position:relative;
     top:-15px;
     left:-25px;
     width:500px;
     height:auto;
-    display:block;
     z-index:999;
 }
 
-.images h1:hover {
+.containerBody h1:hover {
     color: #767070;
+}
+
+.containerBody {
+    width: 100%;
+    justify-content: center;
+}
+  
+.rowBody {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+}
+  
+.columnBody {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+}
+  
+.technicalBody {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+    margin: 0.5em;
+}
+  
+.planningBody {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+    margin: 0.5em;
+}
+
+.organisationalBody {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+    margin: 0.5em;
+}
+
+@media screen and (max-width: 800px) {
+    .columnBody {
+      flex: 1
+    }
+    .rowBody {
+        width: 100%;
+        flex-direction: column;
+    }
+    .technicalBody, .planningBody, .organisationalBody {
+        height: 25vh;
+        padding: 0;
+    }
+    .containerBody h1 {
+        margin-top: 20%;
+        padding: 0;
+    }
 }
