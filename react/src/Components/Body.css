@@ -46,23 +46,7 @@
     justify-content: center;
 }
   
-.technicalBody {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vh;
-    width: 100%;
-    margin: 0.5em;
-}
-  
-.planningBody {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 75vh;
-    width: 100%;
-    margin: 0.5em;
-}
-
-.organisationalBody {
+.technicalBody, .planningBody, .organisationalBody {
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;

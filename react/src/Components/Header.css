@@ -3,13 +3,7 @@
 .header {
     text-align: center;
     background: white;
-}
-
-.header img {
-    width: 13%;
-    height: 000%;
-    padding-left: 10%;
-    padding-right: 10%;
+    max-height: 100%;
 }
 
 .title {
@@ -23,11 +17,16 @@
     -webkit-text-fill-color: transparent;
 }
 
-
+.navBox {
+    flex-direction: row;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .header img {
         display: none;
+    }
+    .navBox {
+        flex-direction: column-reverse;
     }
 }
 
