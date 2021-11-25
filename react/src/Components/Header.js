@@ -14,7 +14,7 @@ const Header = () => {
       <AppBar position="static"
               sx={{ backgroundColor: "white"}}>
         <Toolbar className="navBox">
-          <NavigationMenu className="navButton"/>
+          <NavigationMenu/>
             <div className="header" style={{ display: "flex", flexGrow: 1, justifyContent: "space-evenly", }}>
               <img src="../logo.png"/>
               <Typography variant="h6" component="div" sx={{  height: "60%", marginTop: "0%" }}>

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
 
+.containerBody {
+    width: 100%;
+    justify-content: center;
+}
+  
 .containerBody h1 {
     font-family: Khand;
     color: #2F5A91;
@@ -11,24 +16,10 @@
     padding: 5%;
 }
 
-.columnBody:hover {
-    position:relative;
-    top:-15px;
-    left:-25px;
-    width:500px;
-    height:auto;
-    z-index:999;
-}
-
 .containerBody h1:hover {
     color: #767070;
 }
 
-.containerBody {
-    width: 100%;
-    justify-content: center;
-}
-  
 .rowBody {
     margin-left: auto;
     margin-right: auto;
@@ -44,6 +35,12 @@
     flex-basis: 100%;
     flex: 1;
     justify-content: center;
+}
+
+.columnBody:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
 }
   
 .technicalBody, .planningBody, .organisationalBody {
