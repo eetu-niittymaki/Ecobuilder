@@ -28,6 +28,9 @@
     .navBox {
         flex-direction: column-reverse;
     }
+    .title {
+        font-size: 400%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

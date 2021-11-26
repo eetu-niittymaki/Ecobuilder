@@ -16,9 +16,10 @@ const Header = () => {
         <Toolbar className="navBox">
           <NavigationMenu/>
             <div className="header" style={{ display: "flex", flexGrow: 1, justifyContent: "space-evenly", }}>
-              <img src="../logo.png"/>
-              <Typography variant="h6" component="div" sx={{  height: "60%", marginTop: "0%" }}>
+              <img src="../logo.png" height="90%"/>
+              <Typography variant="h6" component="div" sx={{  display: "flex", flexDirection: "column", height: "100%" }}>
                 <Link to="/" style={{ textDecoration: 'none' }}><span className="title" >ecobuilder</span></Link>
+                <span style={{color: "#767070", marginTop: "-5%"}}>Insert slogan here</span>
               </Typography>
               <a href="https://www.bayern.de/">
                 <img src="../bayer.png" height="auto"/>

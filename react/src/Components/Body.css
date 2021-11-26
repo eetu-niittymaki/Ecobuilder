@@ -35,7 +35,17 @@
     flex-basis: 100%;
     flex: 1;
     justify-content: center;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
     
+}
+
+.columnBody:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    opacity: 0.7;
+    filter: alpha(opacity=40);
 }
 
 .technicalBody, .planningBody, .organisationalBody {
@@ -44,19 +54,7 @@
     height: 75vh;
     width: 100%;
     margin: 0.5em;
-    opacity: 1.0;
-    filter: alpha(opacity=100);
 }
-
-.technicalBody:hover, .planningBody:hover , .organisationalBody:hover  {
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
-    opacity: 0.7;
-    filter: alpha(opacity=40);
-    
-}
-
 
 @media screen and (max-width: 800px) {
     .columnBody {
