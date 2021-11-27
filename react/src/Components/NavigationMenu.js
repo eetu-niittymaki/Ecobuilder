@@ -10,6 +10,7 @@ import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-router-dom'
+import Modal from "./Modal"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,6 +61,9 @@ export default function NavigationMenu() {
     }
   }
 
+  const modalInfo = [ 
+    {title: "Info", contents: "Ecobuilder is your friend in cheaper and more energy efficient construction"}
+]
 
   const list = (anchor) => (
     <Box
@@ -123,7 +127,7 @@ export default function NavigationMenu() {
   )
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "row"}}>
       {['menu'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)} style={{color: "#767070"}}>{anchor}</Button>
@@ -137,6 +141,9 @@ export default function NavigationMenu() {
           </SwipeableDrawer>
         </React.Fragment>
       ))}
+      {modalInfo.map((props) => 
+        <Modal {...props} key={props.title} />
+      )} 
     </div>
   );
 }
