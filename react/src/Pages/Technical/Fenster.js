@@ -31,14 +31,14 @@ export default function Fenster() {
                 }}>
                 </div>
                     <div style={{ fontSize: "120%" }}>
-                        <img src="../fenster/fenster_icon.png" style={{ marginTop: "5%", marginLeft: "5%",  }} />
+                        <img src="../fenster/fenster_icon.png" className="icon" />
                         <div style={{ marginTop: "10%",  textAlign: "center"}}>
                             {example.map((props) => 
                                <Modal {...props} key={props.title} />
                             )}   
                         </div>
                     <div style={{ marginTop: "16%" }}>
-                        <img src="../fenster/fenster_footer.png" width="auto" height="auto" />
+                        <img src="../fenster/fenster_footer.png" className="footerImg" />
                     </div>
                 </div>
             </Box>

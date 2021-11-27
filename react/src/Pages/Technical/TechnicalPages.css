@@ -19,3 +19,20 @@
     margin-right: auto;
     width: 60%;
 }
+
+
+.icon {
+    margin-top: 5%;
+    margin-left: 5%;
+    max-width: 40%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .icon {
+        margin-left:  10%;
+    }
+    .footerImg {
+        width: 100vw;
+    }
+}
