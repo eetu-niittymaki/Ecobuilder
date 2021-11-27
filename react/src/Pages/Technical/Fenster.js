@@ -19,20 +19,13 @@ export default function Fenster() {
     return (
         <div className="container">
             <Header />
-            <Box sx={{
-                marginTop: "1%", display: 'flex',
-                justifyContent: "center", width: "100%"
-            }}>
-                <div style={{
-                    backgroundImage: "url(../fenster/fenster_window.png)",
-                    backgroundSize: "cover",
-                    height: "90vh",
-                    width: "20%",
-                }}>
+            <Box className="pageBox">
+                <div style={{ backgroundImage: "url(../fenster/fenster_window.png)"}} 
+                     className="backgroundImg">
                 </div>
                     <div style={{ fontSize: "120%" }}>
                         <img src="../fenster/fenster_icon.png" className="icon" />
-                        <div style={{ marginTop: "10%",  textAlign: "center"}}>
+                        <div className="modalContainer">
                             {example.map((props) => 
                                <Modal {...props} key={props.title} />
                             )}   

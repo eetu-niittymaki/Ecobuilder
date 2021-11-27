@@ -1,7 +1,6 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import Header from "../../Components/Header.js"
-import SvgButton from "../../Components/SvgButton.js"
 import Button from '@mui/material/Button';
 import "./TechnicalPages.css"
 
@@ -13,13 +12,9 @@ export default function Wand() {
   return (
     <div className="container">
     <Header/>   
-    <Box sx={{ marginTop: "1%", display: 'inline-flex', 
-                justifyContent: "center", width: "100%" }}>
-        <div style={{ backgroundImage: "url(../wand/wand_wall.png)", 
-                        backgroundSize: "cover",
-                        height: "90vh",
-                        width: "20%",
-                        }}>
+    <Box className="pageBox">
+        <div style={{ backgroundImage: "url(../wand/wand_wall.png)" }}
+            className="backgroundImg">
         </div>
         <div>
             <img src="../wand/wand_icon.png"  className="icon" /> 
