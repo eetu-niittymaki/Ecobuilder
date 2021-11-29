@@ -1,21 +1,13 @@
-import logo from "./logo.svg";
-import { useState } from "react";
+import React, { Component } from "react";
+import { render } from "react-dom";
 import "./App.css";
-import PinButton from "./Components/PinButton.js";
-import SceneSwitcher from "./Components/SceneSwitcher.js";
+import FormContainer from "./Components/FormContainer";
 
 function App() {
-  
-  const testId = 1;
-  const [scene, setScene] = useState([]);
-
   return (
     <div className="App">
-      <header className="App-header">
-        <p>o-------o--------o</p>
-        <SceneSwitcher scene={1} />
-      </header>
-      <PinButton Id={testId} />
+      <header className="App-header"></header>
+      <FormContainer />
     </div>
   );
 }
