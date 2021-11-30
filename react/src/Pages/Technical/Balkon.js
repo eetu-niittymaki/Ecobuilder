@@ -15,18 +15,18 @@ export default function Balkon() {
         <div className="container">
             <Header />
             <Box className="pageBox">
-                <div style={{ backgroundImage: "url(../balkon/balkon.png)"}} 
+                <div style={{ backgroundImage: "url(../tech/balkon/balkon.png)"}} 
                      className="backgroundImg">
                 </div>
                     <div style={{ fontSize: "120%" }}>
-                        <img src="../balkon/balkon_icon.png" className="icon" />
+                        <img src="../tech/balkon/balkon_icon.png" className="icon" />
                         <div className="modalContainer">
                             {example.map((props) => 
                                <Modal {...props} key={props.title} />
                             )}   
                         </div>
                     <div style={{ marginTop: "16%" }}>
-                        <img src="../balkon/balkon_footer.png" className="footerImg" />
+                        <img src="../tech/balkon/balkon_footer.png" className="footerImg" />
                     </div>
                 </div>
             </Box>

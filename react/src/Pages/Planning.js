@@ -10,11 +10,12 @@ const MAP = {
         name: 'planning',
         areas: [
             { name: "grundriss", shape: "rect", coords: [110,35, 330,110], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
-            { name: "gesatsystem", shape: "rect", coords: [385,25, 660,100], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+            { name: "gesamtsystem", shape: "rect", coords: [385,25, 660,100], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
             { name: "brandschutz", shape: "rect", coords: [740,35, 1000,110], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
             { name: "heizung", shape: "rect", coords: [240,660, 420,730], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
             { name: "kuhlung", shape: "rect", coords: [540,660, 810,750], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
-            { name: "luftung", shape: "rect", coords: [810,600, 990,675], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"}
+            { name: "luftung", shape: "rect", coords: [810,600, 990,675], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"},
+            { name: "betrieb", shape: "rect", coords: [20,610, 220,690], preFillColor: "rgba(255, 255, 255, 0.0)", strokeColor: "#008ae6"}
         ]
     }
     

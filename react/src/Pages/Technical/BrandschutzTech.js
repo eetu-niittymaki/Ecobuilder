@@ -10,23 +10,23 @@ const example = [
     { title: "3", picture:"../fenster/fenster_footer.png",contents: "Placeat porro illum et totam earum voluptas."},
 ]
 
-export default function Fundament() {
+export default function BrandschutzTech() {
     return (
         <div className="container">
             <Header />
             <Box className="pageBox">
-                <div style={{ backgroundImage: "url(../tech/fundament/fundament.png)"}} 
+                <div style={{ backgroundImage: "url(../tech/brandschutz_tech/brandschutz.png)"}} 
                      className="backgroundImg">
                 </div>
                     <div style={{ fontSize: "120%" }}>
-                        <img src="../tech/fundament/fundament_icon.png" className="icon" />
+                        <img src="../tech/brandschutz_tech/brandschutz_icon.png" className="icon" />
                         <div className="modalContainer">
                             {example.map((props) => 
                                <Modal {...props} key={props.title} />
                             )}   
                         </div>
                     <div style={{ marginTop: "16%" }}>
-                        <img src="../tech/fundament/fundament_footer.png" className="footerImg" />
+                        <img src="../tech/brandschutz_tech/brandschutz_footer.png" className="footerImg" />
                     </div>
                 </div>
             </Box>

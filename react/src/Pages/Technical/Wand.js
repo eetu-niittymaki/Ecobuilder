@@ -13,11 +13,11 @@ export default function Wand() {
     <div className="container">
     <Header/>   
     <Box className="pageBox">
-        <div style={{ backgroundImage: "url(../wand/wand.png)" }}
+        <div style={{ backgroundImage: "url(../tech/wand/wand.png)" }}
             className="backgroundImg">
         </div>
         <div>
-            <img src="../wand/wand_icon.png"  className="icon" /> 
+            <img src="../tech/wand/wand_icon.png"  className="icon" /> 
             <div>
                 <h1>Your ideas could stand right here!</h1>
             </div>
@@ -25,7 +25,7 @@ export default function Wand() {
                                                 width: "30%", height: "10%",
                                                 left: "35%", marginBottom: "5%"}}>share ideas</Button>
             <div>
-                <img src="../wand/wand_footer.png" className="footerImg"/> 
+                <img src="../tech/wand/wand_footer.png" className="footerImg"/> 
             </div> 
         </div>    
     </Box>

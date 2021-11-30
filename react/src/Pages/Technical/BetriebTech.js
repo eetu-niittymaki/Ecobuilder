@@ -10,23 +10,23 @@ const example = [
     { title: "3", picture: "../betrieb/betrieb_icon.png",contents: "Placeat porro illum et totam earum voluptas."},
 ]
 
-export default function Betrieb() {
+export default function BetriebTech() {
     return (
         <div className="container">
             <Header />
             <Box className="pageBox">
-                <div style={{ backgroundImage: "url(../betrieb/betrieb.png)"}} 
+                <div style={{ backgroundImage: "url(../tech/betrieb_tech/betrieb.png)"}} 
                      className="backgroundImg">
                 </div>
                     <div style={{ fontSize: "120%" }}>
-                        <img src="../betrieb/betrieb_icon.png" className="icon" />
+                        <img src="../tech/betrieb_tech/betrieb_icon.png" className="icon" />
                         <div className="modalContainer">
                             {example.map((props) => 
                                <Modal {...props} key={props.title} />
                             )}   
                         </div>
                     <div style={{ marginTop: "16%" }}>
-                        <img src="../betrieb/betrieb_footer.png" className="footerImg" />
+                        <img src="../tech/betrieb_tech/betrieb_footer.png" className="footerImg" />
                     </div>
                 </div>
             </Box>
