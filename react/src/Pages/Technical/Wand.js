@@ -13,7 +13,7 @@ export default function Wand() {
     <div className="container">
     <Header/>   
     <Box className="pageBox">
-        <div style={{ backgroundImage: "url(../wand/wand_wall.png)" }}
+        <div style={{ backgroundImage: "url(../wand/wand.png)" }}
             className="backgroundImg">
         </div>
         <div>
