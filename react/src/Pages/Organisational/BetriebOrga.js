@@ -8,20 +8,20 @@ const onClick = () => {
   alert("Nothing here yet :(");
 };
 
-export default function Marktanalyse() {
+export default function BetriebOrga() {
   return (
     <div className="container">
       <Header />
       <Box className="pageBox">
         <div
           style={{
-            backgroundImage: "url(../orga/marktanalyse/marktanalyse.png)",
+            backgroundImage: "url(../orga/betrieborga/betrieborga.png)",
           }}
           className="backgroundImg"
         ></div>
         <div>
           <img
-            src="../orga/marktanalyse/marktanalyse_icon.png"
+            src="../orga/betrieborga/betrieborga_icon.png"
             className="icon"
             alt=""
           />
@@ -43,7 +43,7 @@ export default function Marktanalyse() {
           </Button>
           <div>
             <img
-              src="../orga/marktanalyse/marktanalyse_footer.png"
+              src="../orga/betrieborga/betrieborga_footer.png"
               className="footerImg"
               alt=""
             />
