@@ -6,14 +6,10 @@ import Modal from "../../Components/Modal.js"
 import "./TechnicalPages.css"
 
 const example = [
-    { title: "U-Wert-/g-Wert-Optimierung", contents: "Ipsum ipsum eos alias reiciendis ex."},
-    { title: "Optimierung das Rahmenanteils", contents: "Reiciendis provident eum laudantium non in odio non."},
-    { title: "Optimierung der Fenstergröße und Ausrichtung", contents: "Placeat porro illum et totam earum voluptas."},
+    { title: "U-Wert-/g-Wert-Optimierung", picture: "../fenster/fenster_icon.png", contents: "Ipsum ipsum eos alias reiciendis ex."},
+    { title: "Optimierung das Rahmenanteils", picture:"../fenster/fenster_footer.png", contents: "Reiciendis provident eum laudantium non in odio non."},
+    { title: "Optimierung der Fenstergröße und Ausrichtung", picture:"../fenster/fenster_footer.png",contents: "Placeat porro illum et totam earum voluptas."},
 ]
-
-const Transition = React.forwardRef(function Transition(props, ref) {
-    return <Slide direction="up" ref={ref} {...props} />;
-});
 
 export default function Fenster() {
     return (

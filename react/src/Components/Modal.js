@@ -35,6 +35,7 @@ export default function Modal (props) {
             >
                 <DialogTitle>{props.title}</DialogTitle>
                 <DialogContent>
+                    {/*<img src={props.picture} />*/}
                     <DialogContentText id="alert-dialog-slide-description">
                         {props.contents}
                     </DialogContentText>

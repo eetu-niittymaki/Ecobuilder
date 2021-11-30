@@ -9,6 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
+import Divider from '@mui/material/Divider';
 import { Link } from 'react-router-dom'
 import Modal from "./Modal"
 
@@ -123,6 +124,12 @@ export default function NavigationMenu() {
           ))}
         </List>
       </Collapse>
+      <Divider />
+      <List>
+        <ListItem>
+          <Link to="/library" style={{ textDecoration: "none", color: "#767070"}}><ListItemText primary="Library" /></Link>
+        </ListItem>
+      </List>
     </Box>
   )
 
