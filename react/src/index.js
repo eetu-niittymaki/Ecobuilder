@@ -31,11 +31,14 @@ import Vorfertigung from "./Pages/Organisational/Vorfertigung.js";
 import Zeitmanagement from "./Pages/Organisational/Zeitmanagement.js";
 import BetriebOrga from "./Pages/Organisational/BetriebOrga.js";
 
+import Library from "./Pages/Library.js";
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/library" element={<Library />} />
         {/* Technical routes */}
         <Route path="/technical" element={<Technical />} />
         <Route path="/technical/fenster" element={<Fenster />} />
