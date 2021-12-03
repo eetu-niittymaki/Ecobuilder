@@ -56,20 +56,11 @@ ReactDOM.render(
         <Route path="/planning/brandschutz" element={<BrandschutzPlan />} />
         {/* Organisational routes */}
         <Route path="/organisational" element={<Organisational />} />
-        <Route
-          path="/organisational/ausschbreibung"
-          element={<Ausschbreibung />}
-        />
+        <Route path="/organisational/ausschbreibung" element={<Ausschbreibung />} />
         <Route path="/organisational/marktanalyse" element={<Marktanalyse />} />
-        <Route
-          path="/organisational/qualitatsmanagement"
-          element={<Qualitätsmanagement />}
-        />
+        <Route path="/organisational/qualitatsmanagement" element={<Qualitätsmanagement />} />
         <Route path="/organisational/vorfertigung" element={<Vorfertigung />} />
-        <Route
-          path="/organisational/zeitmanagement"
-          element={<Zeitmanagement />}
-        />
+        <Route path="/organisational/zeitmanagement" element={<Zeitmanagement />} />
         <Route path="/organisational/betrieb" element={<BetriebOrga />} />
       </Routes>
     </BrowserRouter>
