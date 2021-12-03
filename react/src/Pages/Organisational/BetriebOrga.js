@@ -15,13 +15,13 @@ export default function BetriebOrga() {
       <Box className="pageBox">
         <div
           style={{
-            backgroundImage: "url(../orga/betrieborga/betrieborga.png)",
+            backgroundImage: "url(../orga/betrieborga/betrieb.png)",
           }}
           className="backgroundImg"
         ></div>
         <div>
           <img
-            src="../orga/betrieborga/betrieborga_icon.png"
+            src="../orga/betrieborga/betrieb_icon.png"
             className="icon"
             alt=""
           />

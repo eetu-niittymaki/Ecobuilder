@@ -24,7 +24,7 @@ import BetriebPlan from "./Pages/Planning/BetriebPlan.js";
 import BrandschutzPlan from "./Pages/Planning/BrandschutzPlan.js";
 
 import Organisational from "./Pages/Organisational.js";
-import Ausschbreibung from "./Pages/Organisational/Ausschbreibung.js";
+import Ausschreibung from "./Pages/Organisational/Ausschreibung.js";
 import Marktanalyse from "./Pages/Organisational/Marktanalyse.js";
 import Qualitätsmanagement from "./Pages/Organisational/Qualitätsmanagement.js";
 import Vorfertigung from "./Pages/Organisational/Vorfertigung.js";
@@ -56,7 +56,7 @@ ReactDOM.render(
         <Route path="/planning/brandschutz" element={<BrandschutzPlan />} />
         {/* Organisational routes */}
         <Route path="/organisational" element={<Organisational />} />
-        <Route path="/organisational/ausschbreibung" element={<Ausschbreibung />} />
+        <Route path="/organisational/ausschreibung" element={<Ausschreibung />} />
         <Route path="/organisational/marktanalyse" element={<Marktanalyse />} />
         <Route path="/organisational/qualitatsmanagement" element={<Qualitätsmanagement />} />
         <Route path="/organisational/vorfertigung" element={<Vorfertigung />} />
