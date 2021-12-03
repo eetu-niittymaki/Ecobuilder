@@ -13,15 +13,15 @@ import DialogTitle from '@mui/material/DialogTitle';
 import NavigationMenu from "./NavigationMenu"
 import Slide from '@mui/material/Slide';
 import './Header.css';
+import FaqText  from "./FaqText.js"
 
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const modalInfo = {title: "Info", contents: "Ecobuilder is your friend in cheaper and more energy efficient construction"}
 
 const Header = () => {
-  // Reused code for Dialog, very bad, not good
+  // Reused code for Dialog, very stupid bad, not good
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -63,11 +63,13 @@ const Header = () => {
         transitionComponent={Transition}
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
+        maxWidth="lg"
       >
-        <DialogTitle>{modalInfo.title}</DialogTitle>
+        <DialogTitle>{"FAQ"}</DialogTitle>
           <DialogContent>
+            <img src="./faq.png" width="100%"/>
             <DialogContentText id="alert-dialog-slide-description">
-              {modalInfo.contents}
+              <FaqText />
             </DialogContentText>
           </DialogContent>
       </Dialog>
