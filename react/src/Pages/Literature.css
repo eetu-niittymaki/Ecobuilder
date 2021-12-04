@@ -6,24 +6,13 @@
 }
 
 .pdfContainer {
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     margin-bottom: 10%;
-    display: inline;
 }
 
-.pdfItem {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: row;
-    text-align: center;
-    padding-left: 5%;
-}
-
-.pdfItem a {
-    text-decoration: none;
-    color: white;
+.pdfPage {
+    width: 10px;
 }
