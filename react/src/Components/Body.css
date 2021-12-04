@@ -71,10 +71,14 @@
 
 .footer p {
     color: #2F5A91;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
 } 
 
 .footer p:hover {
-    opacity: 70%
+    opacity: 70%;
+    opacity: 0.7;
+    filter: alpha(opacity=40);
 }
 
 @media screen and (max-width: 800px) {
