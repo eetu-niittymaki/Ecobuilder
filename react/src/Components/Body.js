@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Body.css"
-import Box from '@mui/material/Box';
 import { Link } from 'react-router-dom'
 
 export default function Body() {
@@ -22,6 +21,10 @@ export default function Body() {
                         <Link to="/organisational" style={{ textDecoration: 'none' }}><h1>Organisational Solutions</h1></Link>
                     </div>
                 </div>
+            </div>
+            <div className="footer">
+                <Link to="/literature" style={{textDecoration: "none"}}><p>Literature </p></Link>
+                <Link to="/faq" style={{textDecoration: "none"}}><p>FAQ </p></Link>
             </div>
         </div>
     )
