@@ -1,0 +1,29 @@
+.litTitle {
+    color: #2F5A91;
+    text-align: center;
+    font-family: Khand;
+    font-size: 300%;
+}
+
+.pdfContainer {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 10%;
+    display: inline;
+}
+
+.pdfItem {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.pdfItem a {
+    text-decoration: none;
+    color: white;
+}
