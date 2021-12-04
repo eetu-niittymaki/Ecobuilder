@@ -1,9 +1,14 @@
 import React from "react";
+import Header from "./Header"
+import "./Faq.css"
 
-export default function FaqText() {
+export default function Faq() {
     return (
-        <div>
-            <h1 style={{fontWeight: "bold", textDecoration: "underline"}}>CUSTOMER FAQ </h1>
+        <div >
+            <Header />
+            <div className="containerFaq" >
+            <img src="./faq.png" width="100%"/>
+            <h1 className="subTitle">CUSTOMER FAQ </h1>
             <h1>1. What is this Webtool about?</h1>
                 <p>This website describes 19 optimization approaches for affordable and energy-efficient construction. 
                     It explains practical examples of how energy-efficient buildings can also be constructed cost-effectively. 
@@ -59,7 +64,7 @@ export default function FaqText() {
             <p>All texts, maps, and research results from the LfU are published in the Energy Atlas of Bavaria. 
                 The Energy Atlas can be found on the following link: <a href ="https://www.energieatlas.bayern.de">https://www.energieatlas.bayern.de/</a></p>
 
-            <h1 style={{fontWeight: "bold", textDecoration: "underline"}}>CLIENT FAQ </h1>
+            <h1 className="subTitle">CLIENT FAQ </h1>
             <h1>1. Can I add more information on the Webtool later on?</h1>
                 <p>Yes, that is the goal. As of right now, the solutions are not complete. 
                     There will be the option to add information later on.</p>
@@ -75,6 +80,7 @@ export default function FaqText() {
             <h1>4. In what language will the webtool be?</h1>
                 <p>The PDF document is available only in German. The applications on the Webtool will be in English, 
                     but the informational texts will remain in German. </p>
+        </div>
         </div>
     )
 }

@@ -31,6 +31,9 @@ import Vorfertigung from "./Pages/Organisational/Vorfertigung.js";
 import Zeitmanagement from "./Pages/Organisational/Zeitmanagement.js";
 import BetriebOrga from "./Pages/Organisational/BetriebOrga.js";
 
+import Literature from "./Pages/Literature.js"
+import Faq from "./Components/Faq.js"
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -62,6 +65,9 @@ ReactDOM.render(
         <Route path="/organisational/vorfertigung" element={<Vorfertigung />} />
         <Route path="/organisational/zeitmanagement" element={<Zeitmanagement />} />
         <Route path="/organisational/betrieb" element={<BetriebOrga />} />
+        {/*Other routes*/}
+        <Route path="/literature" element={<Literature />} />
+        <Route path="/faq" element={<Faq />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

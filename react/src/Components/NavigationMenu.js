@@ -120,10 +120,16 @@ export default function NavigationMenu() {
           ))}
         </List>
       </Collapse>
+      <ListItem>
+        <Link to="/literature" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Literature"></ListItemText></Link>
+      </ListItem>
       <Divider />
       <List>
         <ListItem>
           <Link to="/library" style={{ textDecoration: "none", color: "#767070"}}><ListItemText primary="Library" /></Link>
+        </ListItem>
+        <ListItem>
+          <Link to="/faq" style={{ textDecoration: "none", color: "#767070"}}><ListItemText primary="FAQ" /></Link>
         </ListItem>
       </List>
     </Box>
