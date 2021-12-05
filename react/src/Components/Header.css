@@ -25,9 +25,13 @@
 @media only screen and (max-width: 600px) {
     .header img {
         display: none;
+        
     }
     .navBox {
         flex-direction: column-reverse;
+    }
+    .title {
+        font-size: 350%;
     }
 }
 

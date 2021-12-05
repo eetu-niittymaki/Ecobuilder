@@ -6,13 +6,9 @@
 }
 
 .pdfContainer {
-    width: 50%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     margin-bottom: 10%;
-}
-
-.pdfPage {
-    width: 10px;
 }

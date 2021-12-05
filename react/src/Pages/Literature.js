@@ -34,7 +34,7 @@ export default function Literature() {
                 <ItemsCarousel
                     requestToChangeActive={setActiveItemIndex}
                     activeItemIndex={activeItemIndex}
-                    numberOfCards={(windowWidth <= 1000) ? 1 : 3}
+                    numberOfCards={(windowWidth <= 900) ? 1 : 3 && (windowWidth <= 1300) ? 2 : 3}
                     gutter={20}
                     leftChevron={<ArrowCircleLeftTwoToneIcon fontSize="large" style={{color: "#2F5A91"}}/>}
                     rightChevron={<ArrowCircleRightTwoToneIcon fontSize="large" style={{color: "#2F5A91"}} />}
@@ -44,10 +44,12 @@ export default function Literature() {
                         <div style={{textAlign: "center", marginBottom: "20%", width: "100%"}}>
                             <Document
                                  file={pdf.file}
-                                 className="pdfPage"
+                                 options={{length: 1, disableStream: true, disableAutoFetch: true}}
                             >
                                 <Page pageNumber={1}
-                                      scale={0.7}
+                                      height={600}
+                                      scale={0.8}
+                                      className="pdfPage"
                                 />
                             </Document>
                             <h3 style={{textAlign: "center"}}>{pdf.title}</h3>
