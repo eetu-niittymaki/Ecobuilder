@@ -25,6 +25,7 @@ export default function Body() {
             <div className="footer">
                 <Link to="/literature" style={{textDecoration: "none"}}><p>Literature </p></Link>
                 <Link to="/faq" style={{textDecoration: "none"}}><p>FAQ </p></Link>
+                <Link to="/library" style={{textDecoration: "none"}}><p>Library </p></Link>
             </div>
         </div>
     )

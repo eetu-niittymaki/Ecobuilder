@@ -32,7 +32,8 @@ import Zeitmanagement from "./Pages/Organisational/Zeitmanagement.js";
 import BetriebOrga from "./Pages/Organisational/BetriebOrga.js";
 
 import Literature from "./Pages/Literature.js"
-import Faq from "./Components/Faq.js"
+import Faq from "./Pages/Faq.js"
+import Library from "./Pages/Library.js"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -68,6 +69,7 @@ ReactDOM.render(
         {/*Other routes*/}
         <Route path="/literature" element={<Literature />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/library" element={<Library />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
