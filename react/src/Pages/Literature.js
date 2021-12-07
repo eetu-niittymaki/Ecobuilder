@@ -20,6 +20,12 @@ const pdfs = [
                 Thomas Rosskopf, Michael BraunEnergieinstitut Vorarlberg, Dornbirn `, 
         file: "../pdf/20190729_KliNaWo_Monitoringbericht.pdf"
     },
+    {   id: 3, 
+        title: `Kostengünstiger und zukunftsfähiger
+                Geschosswohnungsbau im Quartier (2019)`, 
+        author: `Dr. Burkhard Schulze Darup (Hrsg.)`, 
+        file: "../pdf/DBU-Abschlussbericht-AZ-33119_01-Hauptbericht.pdf"
+    },
 ]
 
 export default function Literature() {
