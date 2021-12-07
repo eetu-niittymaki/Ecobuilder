@@ -93,7 +93,7 @@ export default function NavigationMenu() {
       </ListItem>
       <Collapse in={!openPlan} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          {['Gesatsystem', 'Grundriss', 'Heizung', 'Kühlung', 'Lüftung'].map((text, index) => (
+          {['Betrieb', 'Brandschutz', 'Gesamtsystem', 'Grundriss', 'Heizung', 'Kühlung', 'Lüftung'].map((text, index) => (
             <Link to={`/planning/${text.toLowerCase().replace("ü", "u")}`}
                   style={{textDecoration: "none", color: "#767070"}}>
               <ListItem button className={classes.nested}>
@@ -110,7 +110,7 @@ export default function NavigationMenu() {
       </ListItem>
       <Collapse in={!openOrg} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          {['Ausschbreibung', 'Marktanalyse', 'Qualitätsmanagement', 'Vorfertigung', 'Zeitmanagement'].map((text, index) => (
+          {['Ausschreibung', 'Betrieb', 'Marktanalyse', 'Qualitätsmanagement', 'Vorfertigung', 'Zeitmanagement'].map((text, index) => (
             <Link to={`/organisational/${text.toLowerCase().replace("ä", "a")}`}
                   style={{textDecoration: "none", color: "#767070"}}>
               <ListItem button className={classes.nested}>

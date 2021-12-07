@@ -45,12 +45,14 @@ export default function Literature() {
                             <Document
                                  file={pdf.file}
                                  options={{length: 1, disableStream: true, disableAutoFetch: true}}
-                            >
+                            >   <div>
                                 <Page pageNumber={1}
                                       height={600}
                                       scale={0.8}
                                       className="pdfPage"
+
                                 />
+                                </div>
                             </Document>
                             <h3 style={{textAlign: "center"}}>{pdf.title}</h3>
                             <h4>Autoren: {pdf.author}</h4>
