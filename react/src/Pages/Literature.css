@@ -12,10 +12,3 @@
     justify-content: center;
     margin-bottom: 10%;
 }
-
-.pdfPage:hover {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    width: 500px;
-}

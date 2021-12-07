@@ -20,8 +20,6 @@ const pdfs = [
                 Thomas Rosskopf, Michael BraunEnergieinstitut Vorarlberg, Dornbirn `, 
         file: "../pdf/20190729_KliNaWo_Monitoringbericht.pdf"
     },
-
-
 ]
 
 export default function Literature() {
@@ -40,19 +38,20 @@ export default function Literature() {
         <div>
             <Header />
             <h1 className="litTitle">Literature</h1>
-            <div style={{ padding: `0 ${chevronWidth}px`, width: "60%", height: "30%", margin: "auto"}}>
+            <div style={{ width: "60%", height: "30%", margin: "auto"}}>
                 <ItemsCarousel
                     requestToChangeActive={setActiveItemIndex}
                     activeItemIndex={activeItemIndex}
-                    numberOfCards={((windowWidth <= 900) ? 1 : 3) && ((windowWidth <= 1300) ? 2 : 3)}
+                    numberOfCards={(windowWidth <= 900) ? 1 : 3 && (windowWidth <= 1300) ? 2 : 3 && (pdfs.length <= 2) ? pdfs.length : 3}
                     gutter={20}
                     leftChevron={<ArrowCircleLeftTwoToneIcon fontSize="large" style={{color: "#2F5A91"}}/>}
                     rightChevron={<ArrowCircleRightTwoToneIcon fontSize="large" style={{color: "#2F5A91"}} />}
                     chevronWidth={chevronWidth}
                     outsideChevron
+                    activePosition={'center'}
                 >
                     {pdfs.map((pdf) => 
-                        <div style={{textAlign: "center", marginBottom: "20%", width: "100%"}}>
+                        <div style={{textAlign: "center", marginBottom: "20%", width: "auto"}}>
                             <Document
                                  file={pdf.file}
                                  options={{length: 1, disableStream: true, disableAutoFetch: true}}
@@ -60,13 +59,14 @@ export default function Literature() {
                                 <Page pageNumber={1}
                                       height={600}
                                       scale={0.8}
-                                      className="pdfPage"
+                                      width={500}
+                                      style={{justifyContent: "right"}}
                                 />
                                 </div>
                             </Document>
                             <h4 style={{textAlign: "center"}}>{pdf.title}</h4>
                             <h5>Autoren: {pdf.author}</h5>
-                            <Button variant="contained" style={{ marginLeft: "auto", marginRight: "auto", width: "60%"}}>
+                            <Button variant="contained" style={{ marginLeft: "auto", marginRight: "auto", width: "auto"}}>
                                 <a href={pdf.file} download style={{ color: "white", textDecoration: "none" }}>Download</a>
                             </Button>
                         </div>
@@ -76,10 +76,3 @@ export default function Literature() {
         </div>
     )
 }
-
-/*
-                            <img src={pdf.cover}/> 
-                            <h3 style={{textAlign: "center"}}>{pdf.title}</h3>
-                            <h4>Autoren: {pdf.author}</h4>
-                            <Button variant="contained" style={{marginLeft: "auto", marginRight: "auto"}}><a href={pdf.file} download>Download</a></Button>
-*/
