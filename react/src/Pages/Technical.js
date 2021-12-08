@@ -59,7 +59,7 @@ export default function Technical() {
                 />
                 </div>
             </Box>
-            <div className="infoText"><h1><InfoOutlinedIcon sx={{color: "#008ae6"}}/> Click on the icons to get more information on the topics you are interested in!</h1></div>
+            <div className="infoText"><h1><InfoOutlinedIcon sx={{color: "#008ae6"}}/> Durch Klicken auf die Symbole, erhalten Sie mehr Informationen zu den Themen!</h1></div>
     </div>
     )
 }

@@ -71,7 +71,7 @@ export default function NavigationMenu() {
       {/*TODO: Can different pages be mapped from an array instead of hardcoding them? */}
       {/*Technical pages*/}
       <ListItem button onClick={() => handleClick("Tech")}>
-        <Link to="/technical" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Technical Solutions"/></Link>
+        <Link to="/technical" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Technische Lösungen"/></Link>
         {!openTech ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
       <Collapse in={!openTech} timeout="auto" unmountOnExit>
@@ -88,7 +88,7 @@ export default function NavigationMenu() {
       </Collapse>
       {/*Planning pages*/}
       <ListItem button onClick={() => handleClick("Plan")}>
-        <Link to="/planning" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Planning Solutions" /></Link>
+        <Link to="/planning" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Planerische Lösungen" /></Link>
         {!openPlan ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
       <Collapse in={!openPlan} timeout="auto" unmountOnExit>
@@ -105,7 +105,7 @@ export default function NavigationMenu() {
       </Collapse>
       {/*Organisational pages*/}
       <ListItem button onClick={() => handleClick("Org")}>
-        <Link to="/organisational" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Organisational Solutions" /></Link>
+        <Link to="/organisational" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Organisatorische Lösungen" /></Link>
         {!openOrg ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
       <Collapse in={!openOrg} timeout="auto" unmountOnExit>
@@ -121,12 +121,12 @@ export default function NavigationMenu() {
         </List>
       </Collapse>
       <ListItem>
-        <Link to="/literature" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Literature"></ListItemText></Link>
+        <Link to="/literature" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Literatur"></ListItemText></Link>
       </ListItem>
       <Divider />
       <List>
         <ListItem>
-          <Link to="/library" style={{ textDecoration: "none", color: "#767070"}}><ListItemText primary="Library" /></Link>
+          <Link to="/library" style={{ textDecoration: "none", color: "#767070"}}><ListItemText primary="Bibliothek" /></Link>
         </ListItem>
         <ListItem>
           <Link to="/faq" style={{ textDecoration: "none", color: "#767070"}}><ListItemText primary="FAQ" /></Link>

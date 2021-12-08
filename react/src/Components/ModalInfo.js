@@ -39,7 +39,28 @@ export default function InfoModal() {
         <DialogTitle>{"Info"}</DialogTitle>
           <DialogContent>
             <DialogContentText id="alert-dialog-slide-description">
-              {"Lorem ipsum dolor dei etc..."}
+              <div>
+                <h2>
+                  "Wir sollten die Dämmung reduzieren und die Wärmerückgewinnung nicht in das Lüftungssystem integrieren".
+                </h2>
+                <p>
+                  Wenn die Kosten steigen, wird die Energieeffizienz oft vernachlässigt. 
+                  Aussagen, wie die obige sind daher keine Seltenheit. 
+                  Energieeffizientes Bauen könne man sich nicht leisten, 
+                  ist eine häufige Meinung von Gebäudemanagern, 
+                  obwohl es bereits Beispiele dafür gibt, wie kostengünstige und gleichzeitig 
+                  energieeffiziente Gebäude realisiert werden können.
+                </p>
+                <br/>
+                <p>
+                  Ecobuilder hat sich zum Ziel gesetzt, Sie durch die folgenden Lösungen zu inspirieren, 
+                  kostengünstige Lösungen für Ihr energieeffizientes Gebäude zu finden. 
+                  Wir stellen Ihnen detaillierte Informationen zu verschiedenen Optimierungsansätzen 
+                  für kostengünstiges und nachhaltiges Bauen zur Verfügung. 
+                  Diese werden Ihnen helfen, eine nachhaltige Energiewende zu unterstützen, 
+                  ohne dabei an Energie- und Budgeteffizienz einzubüßen.
+                  </p>
+              </div>
             </DialogContentText >
           </DialogContent>
       </Dialog>

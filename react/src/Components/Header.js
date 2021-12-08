@@ -19,9 +19,9 @@ const Header = () => {
               <img src="../logo.png" height="90%"/>
               <Typography variant="h6" component="div" sx={{  display: "flex", flexDirection: "column", height: "100%" }}>
                 <Link to="/" style={{ textDecoration: 'none' }}><span className="title" >ecobuilder</span></Link>
-                <span style={{color: "#3a72bd", marginTop: "-5%", display: "flex", flexDirection: "row", justifyContent: "space-around"}}>Building 
-                  <span><span style={{fontWeight: "bold"}}>eco</span>nomically &</span>
-                  <span><span style={{fontWeight: "bold"}}>eco</span>logically!</span>
+                <span style={{color: "#3a72bd", marginTop: "-5%", display: "flex", flexDirection: "row", justifyContent: "space-around"}}>
+                  <span><span style={{fontWeight: "bold"}}>Ökö</span>nomisc &</span>
+                  <span><span style={{fontWeight: "bold"}}>ökö</span>logisch bauen!</span>
                   <ModalInfo />
                 </span>
                 

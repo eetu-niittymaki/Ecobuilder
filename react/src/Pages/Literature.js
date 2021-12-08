@@ -43,7 +43,7 @@ export default function Literature() {
     return (
         <div>
             <Header />
-            <h1 className="litTitle">Literature</h1>
+            <h1 className="litTitle">Literatur</h1>
             <div style={{ width: "60%", height: "30%", margin: "auto"}}>
                 <ItemsCarousel
                     requestToChangeActive={setActiveItemIndex}
