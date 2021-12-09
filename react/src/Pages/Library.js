@@ -6,7 +6,7 @@ import "./Library.css";
 import { Button, IconButton } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const example = [
+const storedSolutions = [
   {
     title: "Ipsum ipsum eos alias reiciendis ex. 1",
     contents: "Ipsum ipsum eos alias reiciendis ex.",
@@ -51,7 +51,13 @@ export default function Library() {
 
   //Save an array to session storage.
   useEffect(() => {
-    sessionStorage.setItem("ecobuilderSavedSolutions", JSON.stringify(example));
+    // When adding another solution:
+    // const storedSolutions = loadStored("ecobuilderSavedSolutions", []);
+    // storedSolutions.push(this.title); // this = the solution you want to add
+    sessionStorage.setItem(
+      "ecobuilderSavedSolutions",
+      JSON.stringify(storedSolutions)
+    );
   }, []);
 
   //Fetch from session storage.
