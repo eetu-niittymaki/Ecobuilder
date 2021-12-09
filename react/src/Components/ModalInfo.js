@@ -7,7 +7,6 @@ import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import IconButton from '@mui/material/IconButton';
 import Slide from '@mui/material/Slide';
 
-// TODO: ADD INFO TEXT
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });

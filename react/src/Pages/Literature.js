@@ -36,6 +36,7 @@ export default function Literature() {
     const handleResize = (e) => {
         setWindowWidth(window.innerWidth)
     }
+    
     useEffect( () => {
         window.addEventListener("resize", handleResize);
     }, [])
