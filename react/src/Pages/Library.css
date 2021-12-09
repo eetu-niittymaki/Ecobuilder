@@ -14,10 +14,21 @@
 }
 
 .container h2 {
-  font-family: Lato;
+  text-align: center;
+  font-family: Khand;
+  color: #2f5a91;
+  background-color: #ffffff;
+  padding: 2%;
+  width: 30%;
+  margin-top: 5vh;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .backgroundImg {
@@ -36,6 +47,23 @@
 .modalContainer {
   margin-top: 10%;
   text-align: center;
+}
+
+.libraryContainer {
+  margin-top: 4%;
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.libraryHeader {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
 }
 
 .icon {
