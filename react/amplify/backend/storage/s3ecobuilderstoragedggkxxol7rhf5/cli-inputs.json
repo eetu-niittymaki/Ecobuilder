@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3ecobuilderstoragedggkxxol7rhf5",
+  "bucketName": "ecobuilder-storage-dggkxxol7rhf5",
+  "policyUUID": "32850ad9",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "DELETE",
+    "READ",
+    "CREATE_AND_UPDATE"
+  ]
+}
