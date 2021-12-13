@@ -20,7 +20,7 @@ const Header = () => {
               <Typography variant="h6" component="div" sx={{  display: "flex", flexDirection: "column", height: "100%" }}>
                 <Link to="/" style={{ textDecoration: 'none' }}><span className="title" >ecobuilder</span></Link>
                 <span style={{color: "#3a72bd", marginTop: "-5%", display: "flex", flexDirection: "row", justifyContent: "space-around"}}>
-                  <span><span style={{fontWeight: "bold"}}>ökö</span>nomisch &</span>
+                  <span><span style={{fontWeight: "bold"}}>Ökö</span>nomisch &</span>
                   <span><span style={{fontWeight: "bold"}}>ökö</span>logisch bauen!</span>
                   <ModalInfo />
                 </span>

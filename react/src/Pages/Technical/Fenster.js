@@ -4,10 +4,10 @@ import Header from "../../Components/Header.js"
 import Modal from "../../Components/Modal.js"
 import "./TechnicalPages.css"
 
-const example = [
-    { title: "U-Wert-/g-Wert-Optimierung", picture1: "../tech/fenster/fenster_icon.png", picture2: "../tech/fenster/fenster_footer.png", contents: "Ipsum ipsum eos alias reiciendis ex."},
-    { title: "Optimierung das Rahmenanteils", picture:"../fenster/fenster_footer.png", contents: "Reiciendis provident eum laudantium non in odio non."},
-    { title: "Optimierung der Fenstergröße und Ausrichtung", picture:"../fenster/fenster_footer.png",contents: "Placeat porro illum et totam earum voluptas."},
+const solutions = [
+    { title: "U-Wert-/g-Wert-Optimierung", file: "../solutions/fenster_U Wert g-Wert_Optimierung.pdf"},
+    { title: "Optimierung das Rahmenanteils", file: "../solutions/fenster_Optimierung des Rahmenanteils.pdf"},
+    { title: "Optimierung der Fenstergröße und Ausrichtung", file: "../solutions/fenster_Optimierung der Fenstergröße und Ausrichtung.pdf"},
 ]
 
 export default function Fenster() {
@@ -21,7 +21,7 @@ export default function Fenster() {
                     <div style={{ fontSize: "120%" }}>
                         <img src="../tech/fenster/fenster_icon.png" className="icon" />
                         <div className="modalContainer">
-                            {example.map((props) => 
+                            {solutions.map((props) => 
                                <Modal {...props} key={props.title} />
                             )}   
                         </div>

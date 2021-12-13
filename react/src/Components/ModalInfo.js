@@ -29,11 +29,11 @@ export default function InfoModal() {
           <InfoOutlinedIcon sx={{color: "#008ae6"}} onClick={handleClickOpen}/>
         </IconButton>
         <Dialog
-        open={open}
-        transitionComponent={Transition}
-        onClose={handleClose}
-        aria-describedby="alert-dialog-slide-description"
-        maxWidth="lg"
+          open={open}
+          transitionComponent={Transition}
+          onClose={handleClose}
+          aria-describedby="alert-dialog-slide-description"
+          maxWidth="lg"
       >
         <DialogTitle>{"Info"}</DialogTitle>
           <DialogContent>
