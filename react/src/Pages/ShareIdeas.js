@@ -20,7 +20,12 @@ export default function ShareIdeas() {
                 <h4>Kontakt:</h4>
                 <p>Fachliches Projektmanagement, Internet-Redaktion, Praxisbeispiele:</p>
                 <p style={{fontWeight: "bold"}}>Bayerisches Landesamt für Umwel</p>
-                <p>Servicestelle Ökoenergien: Telefon: (0821) 9071-5444</p> 
+                <p>Servicestelle Ökoenergien: Telefon: (0821) 9071-5444</p>
+                <h1>
+                    <a href="https://formulare.energieatlas.bayern.de/eab/kontakt.html" style={{textDecoration: "none", color: "#2F5A91", width: "200px"}}>
+                        LINK
+                    </a>
+                </h1>
             </div>
         </div>
     )
