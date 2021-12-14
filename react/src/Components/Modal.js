@@ -39,7 +39,7 @@ export default function Modal(props) {
 
   const handleSaveToLibrary = (solution) => {
     const storedSolutions = loadStored("ecobuilderSavedSolutions", []);
-    if (!storedSolutions.some((solution) => solution.title === props.title)) {
+    if (!storedSolutions.some((solution) => solution.file === props.file)) {
       storedSolutions.push(solution);
     }
     localStorage.setItem(

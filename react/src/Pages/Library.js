@@ -24,7 +24,7 @@ export default function Library() {
       localStorage.getItem("ecobuilderSavedSolutions")
     );
     for (let i = 0; i < storedJSON.length; i++) {
-      if (storedJSON[i].title === storedSolution.title) {
+      if (storedJSON[i].file === storedSolution.file) {
         storedJSON.splice(i, 1);
         localStorage.setItem(
           "ecobuilderSavedSolutions",
@@ -37,7 +37,7 @@ export default function Library() {
 
   const handleDownload = (storedSolution) => {
     const link = document.createElement("a");
-    link.download = storedSolution.title;
+    link.download = storedSolution.file;
     link.href = storedSolution.file;
     link.click();
   };
@@ -65,16 +65,17 @@ export default function Library() {
           <div style={{ fontSize: "120%" }}>
             <div className="modalContainer">
               {savedSolutions.map((savedSolution) => (
-                <div className="libraryContainer" key={savedSolution.title}>
+                <div className="libraryContainer">
                   <Modal
                     {...savedSolution}
-                    key={savedSolution.title}
+                    key={savedSolution.file}
                     library="true"
                   />
                   <IconButton
                     aria-label="download file"
                     size="small"
                     onClick={() => handleDownload(savedSolution)}
+                    sx={{ marginBottom: "1%" }}
                   >
                     <DownloadIcon size="medium" />
                   </IconButton>

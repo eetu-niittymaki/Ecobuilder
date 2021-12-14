@@ -45,12 +45,11 @@
 }
 
 .modalContainer {
-  margin-top: 10%;
   text-align: center;
 }
 
 .libraryContainer {
-  margin-top: 4%;
+  margin-top: 2%;
   text-align: center;
   display: flex;
   justify-content: center;
