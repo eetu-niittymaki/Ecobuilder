@@ -34,6 +34,7 @@ import BetriebOrga from "./Pages/Organisational/BetriebOrga.js";
 import Literature from "./Pages/Literature.js"
 import Faq from "./Pages/Faq.js"
 import Library from "./Pages/Library.js"
+import ShareIdeas from "./Pages/ShareIdeas.js"
 
 ReactDOM.render(
   <React.StrictMode>
@@ -70,6 +71,7 @@ ReactDOM.render(
         <Route path="/literature" element={<Literature />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/library" element={<Library />} />
+        <Route path="/idee-teilen" element={<ShareIdeas />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

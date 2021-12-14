@@ -5,14 +5,16 @@ import Modal from "../../Components/Modal.js"
 import "./TechnicalPages.css"
 
 const solutions = [
-    { title: "U-Wert-/g-Wert-Optimierung", file: "../solutions/fenster_U Wert g-Wert_Optimierung.pdf"},
-    { title: "Optimierung das Rahmenanteils", file: "../solutions/fenster_Optimierung des Rahmenanteils.pdf"},
-    { title: "Optimierung der Fenstergröße und Ausrichtung", file: "../solutions/fenster_Optimierung der Fenstergröße und Ausrichtung.pdf"},
+    { file: "../solutions/fenster_U Wert-g-Wert Optimierung.pdf", },
+    { file: "../solutions/fenster_Optimierung des Rahmenanteils.pdf"},
+    { file: "../solutions/fenster_Optimierung der Fenstergröße und Ausrichtung.pdf"},
 ]
+
 
 export default function Fenster() {
     return (
         <div className="container">
+            
             <Header />
             <Box className="pageBox">
                 <div style={{ backgroundImage: "url(../tech/fenster/fenster.png)"}} 
@@ -22,7 +24,7 @@ export default function Fenster() {
                         <img src="../tech/fenster/fenster_icon.png" className="icon" />
                         <div className="modalContainer">
                             {solutions.map((props) => 
-                               <Modal {...props} key={props.title} />
+                               <Modal {...props} key={props.file} title={props.file.split("/", 4)[2].split("_", 2)[1].split(".", 1).toString()}/>
                             )}   
                         </div>
                     <div style={{ marginTop: "16%" }}>

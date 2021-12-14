@@ -26,6 +26,7 @@ export default function Body() {
                 <Link to="/literature" style={{textDecoration: "none"}}><p>Literatur</p></Link>
                 <Link to="/faq" style={{textDecoration: "none"}}><p>FAQ </p></Link>
                 <Link to="/library" style={{textDecoration: "none"}}><p>Bibliothek</p></Link>
+                <Link to="/idee-teilen" style={{textDecoration: "none"}}><p>Idee Teilen</p></Link>
             </div>
         </div>
     )

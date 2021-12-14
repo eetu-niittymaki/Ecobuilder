@@ -67,7 +67,6 @@ export default function Literature() {
                                       height={600}
                                       scale={0.8}
                                       width={500}
-                                      style={{justifyContent: "right"}}
                                 />
                                 </div>
                             </Document>

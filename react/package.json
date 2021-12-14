@@ -15,7 +15,6 @@
     "@testing-library/user-event": "^12.1.10",
     "material-ui-image": "^3.3.2",
     "react": "^17.0.2",
-    "react-doc-viewer": "^0.1.5",
     "react-dom": "^17.0.2",
     "react-image-mapper": "0.0.15",
     "react-items-carousel": "^2.8.0",
