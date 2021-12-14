@@ -8,6 +8,7 @@ import Slide from "@mui/material/Slide";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import { IconButton } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
+import Alert from '@mui/material/Alert';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -16,6 +17,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 export default function Modal(props) {
   const [open, setOpen] = useState(false);
   const [numPages, setNumPages] = useState(null);
+  const [showAlert, setShowAlert] = useState(false)
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -46,10 +48,17 @@ export default function Modal(props) {
       "ecobuilderSavedSolutions",
       JSON.stringify(storedSolutions)
     );
+    setShowAlert(true)
+    setTimeout(() => {
+        setShowAlert(false)
+    }, 3000)
   };
+
+
 
   return (
     <div style={{ marginBottom: "2%" }}>
+      {showAlert &&  <Alert severity="success" style={{width: "30%", marginLeft: "auto", marginRight: "auto", marginBottom: "2%"}}>Saved to library!</Alert>}
       <Button variant="outlined" onClick={handleClickOpen}>
         {props.title}
       </Button>

@@ -11,7 +11,8 @@ export default function ShareIdeas() {
                          marginTop: "10%", 
                          fontFamily: "Lato"}}>
                 <h1>Teilen Sie Ihre Idee!</h1>
-                <h3 style={{width: "40%", marginLeft: "auto", marginRight: "auto"}}>Sie haben eine Idee oder Vorschlag für kostengünstiges und energieeffizientes Bauen? 
+                <h3 style={{width: "40%", marginLeft: "auto", marginRight: "auto"}}>
+                    Sie haben eine Idee oder Vorschlag für kostengünstiges und energieeffizientes Bauen? 
                     eilen Sie es mit uns, indem Sie den folgenden Fragebogen beantworten.</h3>
                 <Button variant="outlined" style={{ marginLeft: "auto", marginRight: "auto", width: "auto"}}>
                     <a href="../pdf/Fragebogen.pdf" download style={{textDecoration: "none", color: "#2F5A91" }}>Download PDF</a>
