@@ -3,13 +3,12 @@ import Box from "@mui/material/Box";
 import Header from "../../Components/Header.js";
 import Modal from "../../Components/Modal.js";
 import "./OrganisationalPages.css";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
-const example = [
+const solutions = [
   {
-    title: "Definition und Sicherung der Qualitätsanforderungen",
-    picture1: "../orga/ausschreibung/ausschreibung_icon.png",
-    picture2: "../orga/ausschreibung/ausschreibung_footer.png",
-    contents: "Ipsum ipsum eos alias reiciendis ex.",
+    file: "../solutions/Orga-Ausschreibung_Definition und Sicherung der Qualitätsanforderungen.pdf",
   },
 ];
 
@@ -31,9 +30,28 @@ export default function Ausschreibung() {
             alt="Ausschreibung"
           />
           <div className="modalContainer">
-            {example.map((props) => (
-              <Modal {...props} key={props.title} />
-            ))}
+            {solutions.length > 0 ? (
+              solutions.map((props) => (
+                <Modal
+                  {...props}
+                  key={props.file}
+                  title={props.file
+                    .split("/", 4)[2]
+                    .split("_", 2)[1]
+                    .split(".", 1)
+                    .toString()}
+                />
+              ))
+            ) : (
+              <div>
+                <h1>Ihre Ideen könnten genau hier stehen!</h1>
+                <Link to="/idee-teilen" style={{ textDecoration: "none" }}>
+                  <Button variant="outlined" sx={{ width: "30%" }}>
+                    Idee Teilen
+                  </Button>
+                </Link>
+              </div>
+            )}
           </div>
           <div style={{ marginTop: "16%" }}>
             <img

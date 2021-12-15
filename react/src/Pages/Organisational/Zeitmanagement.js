@@ -1,12 +1,12 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Header from "../../Components/Header.js";
-import Button from "@mui/material/Button";
 import "./OrganisationalPages.css";
+import Modal from "../../Components/Modal.js";
+import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 
-const onClick = () => {
-  alert("Nothing here yet :(");
-};
+const solutions = [];
 
 export default function Zeitmanagement() {
   return (
@@ -25,23 +25,31 @@ export default function Zeitmanagement() {
             className="icon"
             alt=""
           />
-          <div>
-            <h1>Your ideas could stand right here!</h1>
+          <div className="modalContainer">
+            {solutions.length > 0 ? (
+              solutions.map((props) => (
+                <Modal
+                  {...props}
+                  key={props.file}
+                  title={props.file
+                    .split("/", 4)[2]
+                    .split("_", 2)[1]
+                    .split(".", 1)
+                    .toString()}
+                />
+              ))
+            ) : (
+              <div>
+                <h1>Ihre Ideen könnten genau hier stehen!</h1>
+                <Link to="/idee-teilen" style={{ textDecoration: "none" }}>
+                  <Button variant="outlined" sx={{ width: "30%" }}>
+                    Idee Teilen
+                  </Button>
+                </Link>
+              </div>
+            )}
           </div>
-          <Button
-            variant="outlined"
-            onClick={onClick}
-            style={{
-              position: "relative",
-              width: "30%",
-              height: "10%",
-              left: "35%",
-              marginBottom: "5%",
-            }}
-          >
-            share ideas
-          </Button>
-          <div>
+          <div style={{ marginTop: "16%" }}>
             <img
               src="../orga/zeitmanagement/zeitmanagement_footer.png"
               className="footerImg"

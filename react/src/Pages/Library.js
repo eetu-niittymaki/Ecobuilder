@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Header from "../Components/Header.js";
 import Modal from "../Components/Modal.js";
 import "./Library.css";
-import { Button, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DownloadIcon from "@mui/icons-material/Download";
 

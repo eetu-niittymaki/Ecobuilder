@@ -3,25 +3,18 @@ import Box from "@mui/material/Box";
 import Header from "../../Components/Header.js";
 import Modal from "../../Components/Modal.js";
 import "./OrganisationalPages.css";
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
-const example = [
+const solutions = [
   {
-    title: "Integrale Planung",
-    picture1: "../orga/qualitätsmanagement/qualitätsmanagement_icon.png",
-    picture2: "../orga/qualitätsmanagement/qualitätsmanagement_footer.png",
-    contents: "Ipsum ipsum eos alias reiciendis ex.",
+    file: "../solutions/Orga-Qualitätsmanagement_Integrale Planung.pdf",
   },
   {
-    title: "Raumweise Einregulierung der Lüftung",
-    picture1: "../orga/qualitätsmanagement/qualitätsmanagement_icon.png",
-    picture2: "../orga/qualitätsmanagement/qualitätsmanagement_footer.png",
-    contents: "Ipsum ipsum eos alias reiciendis ex.",
+    file: "../solutions/Orga-Qualitätsmanagement_Qualitätssicherung bei der Ausführung.pdf",
   },
   {
-    title: "Qualitätssicherung bei der Ausführung",
-    picture1: "../orga/qualitätsmanagement/qualitätsmanagement_icon.png",
-    picture2: "../orga/qualitätsmanagement/qualitätsmanagement_footer.png",
-    contents: "Ipsum ipsum eos alias reiciendis ex.",
+    file: "../solutions/Orga-Qualitätsmanagement_Raumweise Einregulierung der Lüftung.pdf",
   },
 ];
 
@@ -44,9 +37,28 @@ export default function Qualitätsmanagement() {
             alt="Qualitätsmanagement"
           />
           <div className="modalContainer">
-            {example.map((props) => (
-              <Modal {...props} key={props.title} />
-            ))}
+            {solutions.length > 0 ? (
+              solutions.map((props) => (
+                <Modal
+                  {...props}
+                  key={props.file}
+                  title={props.file
+                    .split("/", 4)[2]
+                    .split("_", 2)[1]
+                    .split(".", 1)
+                    .toString()}
+                />
+              ))
+            ) : (
+              <div>
+                <h1>Ihre Ideen könnten genau hier stehen!</h1>
+                <Link to="/idee-teilen" style={{ textDecoration: "none" }}>
+                  <Button variant="outlined" sx={{ width: "30%" }}>
+                    Idee Teilen
+                  </Button>
+                </Link>
+              </div>
+            )}
           </div>
           <div style={{ marginTop: "16%" }}>
             <img
