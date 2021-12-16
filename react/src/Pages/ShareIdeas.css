@@ -1,0 +1,69 @@
+.shareIdeaImg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin: auto;
+    width: 70%;
+}
+
+.ideaContainer {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Lato;
+    height: 100vh;
+}
+
+.ideaContainer h1 {
+    text-align: center;
+    color: #2f5a91;
+    background-color: white;
+    padding: 2%;
+    width: 30%;
+    margin-top: 5;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4em;
+    position: relative;
+    top: 22%;
+    font-weight: bold;
+}
+
+.ideaContainer p {
+    font-weight: bold;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+    .ideaContainer h1 {
+        width: 100%;
+        font-size: 2em;
+        top: 25%
+    }
+    .shareIdeaImg {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .ideaContainer h1 {
+        font-size: 2em;
+        top: 25%;
+    }
+    .shareIdeaImg {
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .ideaContainer h1 {
+        font-size: 2em;
+        top: 25%
+    }
+    .shareIdeaImg {
+        width: 100%;
+    }
+}
