@@ -60,7 +60,7 @@ export default function Library() {
       </div>
       <Box className="pageBox">
         {savedSolutions.length === 0 ? (
-          <h1>You haven't saved anything yet!</h1>
+          <h1>Sie haben noch nichts gespeichert!</h1>
         ) : (
           <div style={{ fontSize: "120%" }}>
             <div className="modalContainer">
