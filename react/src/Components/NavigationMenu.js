@@ -131,6 +131,9 @@ export default function NavigationMenu() {
         <ListItem>
           <Link to="/faq" style={{ textDecoration: "none", color: "#767070"}}><ListItemText primary="FAQ" /></Link>
         </ListItem>
+        <ListItem>
+          <Link to="/idee-teilen" style={{ textDecoration: "none", color: "#767070"}}><ListItemText primary="Idee Teilen" /></Link>
+        </ListItem>
       </List>
     </Box>
   )
