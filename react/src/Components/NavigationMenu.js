@@ -71,7 +71,7 @@ export default function NavigationMenu() {
       {/*TODO: Can different pages be mapped from an array instead of hardcoding them? */}
       {/*Technical pages*/}
       <ListItem button onClick={() => handleClick("Tech")}>
-        <Link to="/technical" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Technische Lösungen"/></Link>
+        <Link to="/technical" style={{textDecoration: "none", color: "#2F5A91", width: "75%"}}><ListItemText primary="Technische Lösungen"/></Link>
         {!openTech ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
       <Collapse in={!openTech} timeout="auto" unmountOnExit>
@@ -88,7 +88,7 @@ export default function NavigationMenu() {
       </Collapse>
       {/*Planning pages*/}
       <ListItem button onClick={() => handleClick("Plan")}>
-        <Link to="/planning" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Planerische Lösungen" /></Link>
+        <Link to="/planning" style={{textDecoration: "none", color: "#2F5A91", width: "75%"}}><ListItemText primary="Planerische Lösungen" /></Link>
         {!openPlan ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
       <Collapse in={!openPlan} timeout="auto" unmountOnExit>
@@ -105,7 +105,7 @@ export default function NavigationMenu() {
       </Collapse>
       {/*Organisational pages*/}
       <ListItem button onClick={() => handleClick("Org")}>
-        <Link to="/organisational" style={{textDecoration: "none", color: "#2F5A91"}}><ListItemText primary="Organisatorische Lösungen" /></Link>
+        <Link to="/organisational" style={{textDecoration: "none", color: "#2F5A91", width: "75%"}}><ListItemText primary="Organisatorische Lösungen" /></Link>
         {!openOrg ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
       <Collapse in={!openOrg} timeout="auto" unmountOnExit>
