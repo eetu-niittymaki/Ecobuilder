@@ -58,8 +58,7 @@ export default function Modal(props) {
 
   return (
     <div style={{ marginBottom: "2%" }}>
-      {showAlert &&  <Alert severity="success" style={{width: "30%", marginLeft: "auto", marginRight: "auto", marginBottom: "2%"}}>In Bibliothek gespeichert!
-</Alert>}
+      {showAlert &&  <Alert severity="success" style={{width: "30%", marginLeft: "auto", marginRight: "auto", marginBottom: "2%"}}>In Bibliothek gespeichert!</Alert>}
       <Button variant="outlined" onClick={handleClickOpen}>
         {props.title}
       </Button>
