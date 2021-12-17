@@ -25,21 +25,21 @@ export default function ShareIdeas() {
                     </div>
                     <h2 style={{ width: "40%", marginLeft: "auto", marginRight: "auto" }}>
                         Sie haben eine Idee oder Vorschlag für kostengünstiges und energieeffizientes Bauen?
-                        eilen Sie es mit uns, indem Sie den folgenden Fragebogen beantworten.
+                        Teilen Sie es mit uns, indem Sie den folgenden Fragebogen beantworten.
                     </h2>
                     <Button variant="contained"
                         color="primary"
-                        style={{ borderRadius: "1px", color: "white" }}
+                        style={{ borderRadius: "1px"}}
                     >
                         <a href="../pdf/Fragebogen.pdf" download style={{ textDecoration: "none", color: "white" }}>Download Fragebogen</a>
                     </Button>
 
                     <h3>Kontakt:</h3>
                     <p>Fachliches Projektmanagement, Internet-Redaktion, Praxisbeispiele:</p>
-                    <h4>Bayerisches Landesamt für Umwel</h4>
+                    <h4>Bayerisches Landesamt für Umwelt</h4>
                     <p>Servicestelle Ökoenergien: Telefon: (0821) 9071-5444</p>
                     <Button variant="contained"
-                        style={{ borderRadius: "1px", color: "#2f5a91" }}>
+                        style={{ borderRadius: "1px"}}>
                         <a href="https://formulare.energieatlas.bayern.de/eab/kontakt.html" style={{ textDecoration: "none", color: "white", width: "200px" }}>
                             Kontaktformular
                         </a>
