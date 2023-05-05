@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+.containerFaq {
+    width: 60%;
+    height: 10%;
+    margin-top: 1%; 
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Lato;
+    font-size: 120%;
+}
+
+.subTitle {
+    font-weight: bold;
+    text-decoration: underline; 
+    text-align: center;
+}

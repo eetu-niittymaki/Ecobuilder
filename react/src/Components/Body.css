@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
+
+.containerBody {
+    width: 100%;
+    justify-content: center;
+}
+
+.rowBody {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.rowBody h1 {
+    font-family: Khand;
+    color: #2F5A91;
+    margin-top: 100%;
+    font-weight: 300;
+    text-align: center;
+    font-weight: bold;
+    background: white;
+    padding: 5%;
+}
+
+.rowBody h1:hover {
+    color: #767070;
+}
+  
+.columnBody {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+.columnBody:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    opacity: 0.7;
+    filter: alpha(opacity=40);
+}
+
+.technicalBody, .planningBody, .organisationalBody {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 100%;
+    margin: 0.5em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: solid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Khand;
+    font-size: 200%;
+    color: #767070;
+    text-align: center;
+}
+
+.footer p {
+    color: #2F5A91;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+} 
+
+.footer p:hover {
+    opacity: 70%;
+    opacity: 0.7;
+    filter: alpha(opacity=40);
+}
+
+@media screen and (max-width: 800px) {
+    .columnBody {
+      flex: 1
+    }
+    .rowBody {
+        width: 100%;
+        flex-direction: column;
+    }
+    .technicalBody, .planningBody, .organisationalBody {
+        height: 25vh;
+        padding: 0;
+    }
+    .containerBody h1 {
+        margin-top: 20%;
+        padding: 0;
+    }
+
+    .footer {
+        width: 100%;
+    }
+}
