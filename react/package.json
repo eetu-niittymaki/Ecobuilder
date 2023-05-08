@@ -1,5 +1,6 @@
 {
-  "name": "main",
+  "homepage": "https://eetu-niittymaki.github.io/Ecobuilder/",
+  "name": "ecobuilder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,10 +25,12 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^1.0.1"
   },
+  
   "scripts": {
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
