@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd877e95.chunk.css",
-    "main.js": "/static/js/main.acdae3a6.chunk.js",
-    "main.js.map": "/static/js/main.acdae3a6.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.bbc00d50.js",
-    "runtime-main.js.map": "/static/js/runtime-main.bbc00d50.js.map",
-    "static/js/2.9c43fa96.chunk.js": "/static/js/2.9c43fa96.chunk.js",
-    "static/js/2.9c43fa96.chunk.js.map": "/static/js/2.9c43fa96.chunk.js.map",
-    "static/js/3.7ccf781d.chunk.js": "/static/js/3.7ccf781d.chunk.js",
-    "static/js/3.7ccf781d.chunk.js.map": "/static/js/3.7ccf781d.chunk.js.map",
-    "3bc629d5f743a1772f7a775c5f5fb0c1.js": "/3bc629d5f743a1772f7a775c5f5fb0c1.js",
-    "3bc629d5f743a1772f7a775c5f5fb0c1.js.LICENSE.txt": "/3bc629d5f743a1772f7a775c5f5fb0c1.js.LICENSE.txt",
-    "index.html": "/index.html",
-    "static/css/main.bd877e95.chunk.css.map": "/static/css/main.bd877e95.chunk.css.map",
-    "static/js/2.9c43fa96.chunk.js.LICENSE.txt": "/static/js/2.9c43fa96.chunk.js.LICENSE.txt"
+    "main.css": "/ecobuilder/static/css/main.bd877e95.chunk.css",
+    "main.js": "/ecobuilder/static/js/main.acdae3a6.chunk.js",
+    "main.js.map": "/ecobuilder/static/js/main.acdae3a6.chunk.js.map",
+    "runtime-main.js": "/ecobuilder/static/js/runtime-main.d0ef5469.js",
+    "runtime-main.js.map": "/ecobuilder/static/js/runtime-main.d0ef5469.js.map",
+    "static/js/2.c0b2ad2b.chunk.js": "/ecobuilder/static/js/2.c0b2ad2b.chunk.js",
+    "static/js/2.c0b2ad2b.chunk.js.map": "/ecobuilder/static/js/2.c0b2ad2b.chunk.js.map",
+    "static/js/3.7ccf781d.chunk.js": "/ecobuilder/static/js/3.7ccf781d.chunk.js",
+    "static/js/3.7ccf781d.chunk.js.map": "/ecobuilder/static/js/3.7ccf781d.chunk.js.map",
+    "3bc629d5f743a1772f7a775c5f5fb0c1.js": "/ecobuilder/3bc629d5f743a1772f7a775c5f5fb0c1.js",
+    "3bc629d5f743a1772f7a775c5f5fb0c1.js.LICENSE.txt": "/ecobuilder/3bc629d5f743a1772f7a775c5f5fb0c1.js.LICENSE.txt",
+    "index.html": "/ecobuilder/index.html",
+    "static/css/main.bd877e95.chunk.css.map": "/ecobuilder/static/css/main.bd877e95.chunk.css.map",
+    "static/js/2.c0b2ad2b.chunk.js.LICENSE.txt": "/ecobuilder/static/js/2.c0b2ad2b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bbc00d50.js",
-    "static/js/2.9c43fa96.chunk.js",
+    "static/js/runtime-main.d0ef5469.js",
+    "static/js/2.c0b2ad2b.chunk.js",
     "static/css/main.bd877e95.chunk.css",
     "static/js/main.acdae3a6.chunk.js"
   ]
