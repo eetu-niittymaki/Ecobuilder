@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/ecobuilder/static/css/main.bd877e95.chunk.css",
-    "main.js": "/ecobuilder/static/js/main.acdae3a6.chunk.js",
-    "main.js.map": "/ecobuilder/static/js/main.acdae3a6.chunk.js.map",
-    "runtime-main.js": "/ecobuilder/static/js/runtime-main.d0ef5469.js",
-    "runtime-main.js.map": "/ecobuilder/static/js/runtime-main.d0ef5469.js.map",
-    "static/js/2.c0b2ad2b.chunk.js": "/ecobuilder/static/js/2.c0b2ad2b.chunk.js",
-    "static/js/2.c0b2ad2b.chunk.js.map": "/ecobuilder/static/js/2.c0b2ad2b.chunk.js.map",
-    "static/js/3.7ccf781d.chunk.js": "/ecobuilder/static/js/3.7ccf781d.chunk.js",
-    "static/js/3.7ccf781d.chunk.js.map": "/ecobuilder/static/js/3.7ccf781d.chunk.js.map",
-    "3bc629d5f743a1772f7a775c5f5fb0c1.js": "/ecobuilder/3bc629d5f743a1772f7a775c5f5fb0c1.js",
-    "3bc629d5f743a1772f7a775c5f5fb0c1.js.LICENSE.txt": "/ecobuilder/3bc629d5f743a1772f7a775c5f5fb0c1.js.LICENSE.txt",
-    "index.html": "/ecobuilder/index.html",
-    "static/css/main.bd877e95.chunk.css.map": "/ecobuilder/static/css/main.bd877e95.chunk.css.map",
-    "static/js/2.c0b2ad2b.chunk.js.LICENSE.txt": "/ecobuilder/static/js/2.c0b2ad2b.chunk.js.LICENSE.txt"
+    "main.css": "/Ecobuilder/static/css/main.bd877e95.chunk.css",
+    "main.js": "/Ecobuilder/static/js/main.acdae3a6.chunk.js",
+    "main.js.map": "/Ecobuilder/static/js/main.acdae3a6.chunk.js.map",
+    "runtime-main.js": "/Ecobuilder/static/js/runtime-main.3984e435.js",
+    "runtime-main.js.map": "/Ecobuilder/static/js/runtime-main.3984e435.js.map",
+    "static/js/2.440d9abe.chunk.js": "/Ecobuilder/static/js/2.440d9abe.chunk.js",
+    "static/js/2.440d9abe.chunk.js.map": "/Ecobuilder/static/js/2.440d9abe.chunk.js.map",
+    "static/js/3.7ccf781d.chunk.js": "/Ecobuilder/static/js/3.7ccf781d.chunk.js",
+    "static/js/3.7ccf781d.chunk.js.map": "/Ecobuilder/static/js/3.7ccf781d.chunk.js.map",
+    "3bc629d5f743a1772f7a775c5f5fb0c1.js": "/Ecobuilder/3bc629d5f743a1772f7a775c5f5fb0c1.js",
+    "3bc629d5f743a1772f7a775c5f5fb0c1.js.LICENSE.txt": "/Ecobuilder/3bc629d5f743a1772f7a775c5f5fb0c1.js.LICENSE.txt",
+    "index.html": "/Ecobuilder/index.html",
+    "static/css/main.bd877e95.chunk.css.map": "/Ecobuilder/static/css/main.bd877e95.chunk.css.map",
+    "static/js/2.440d9abe.chunk.js.LICENSE.txt": "/Ecobuilder/static/js/2.440d9abe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d0ef5469.js",
-    "static/js/2.c0b2ad2b.chunk.js",
+    "static/js/runtime-main.3984e435.js",
+    "static/js/2.440d9abe.chunk.js",
     "static/css/main.bd877e95.chunk.css",
     "static/js/main.acdae3a6.chunk.js"
   ]
