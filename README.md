@@ -4,4 +4,4 @@ A school project made for the Bayerisches Landesamt für Umwelt (Bavarian State 
 
 https://eetu-niittymaki.github.io/Ecobuilder/
 
-![alt text](https://i.ibb.co/T8qZT9z/Annotation-2024-04-20-114327.png)
+![alt text](https://i.ibb.co/Gxcs4fK/Annotation-2024-04-20-114955.png)
